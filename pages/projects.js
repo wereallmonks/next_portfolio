@@ -1,3 +1,4 @@
+import {server} from '../config'
 import ProjectList from '../components/ProjectList'
 
 const projects = ({ projects }) => {
@@ -11,7 +12,7 @@ const projects = ({ projects }) => {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
+  const res = await fetch(`${server}/api/projects`)
   const projects = await res.json()
 
   return {
