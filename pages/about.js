@@ -11,10 +11,11 @@ const About = ()=> {
        </a>
      </div>
        <div>
-         <title>Books</title>
-         <h1>Thank books I purchased at independent bookstores during the pandemic.</h1>
+         <title>About Me</title>
+         <h1>My recent purchase from these independent bookstores. </h1>
          <title> Music </title>
-         <h1>My husbands french music playlists and my terror music for bedtime</h1>
+         <h1>What I'm listening to</h1>
+         <iframe height="380" loading="lazy" src="https://open.spotify.com/embed/playlist/1tTQdk0tMMZIuzyT254xpc" style={{float : 'left', paddingRight : '5px'}} title="Clo in Quarantine III" width="300"></iframe>
        </div>
     </div>
   )
