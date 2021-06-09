@@ -1,23 +1,15 @@
-export default function Spotify(options) {
-    return {
-      id: "spotify",
-      name: "Spotify",
-      type: "oauth",
-      version: "2.0",
-      scope: "user-read-email",
-      params: { grant_type: "authorization_code" },
-      accessTokenUrl: "https://accounts.spotify.com/api/token",
-      authorizationUrl:
-        "https://accounts.spotify.com/authorize?response_type=code",
-      profileUrl: "https://api.spotify.com/v1/me",
-      profile(profile) {
-        return {
-          id: profile.id,
-          name: profile.display_name,
-          email: profile.email,
-          image: profile.images?.[0]?.url,
-        }
-      },
-      ...options,
-    }
+import useSWR from 'swr';
+import fetcher from '../lib/fetcher';
+import Track from './Track';
+
+export default function Spotify() {
+  const { data } = useSWR('/api/tracks', fetcher);
+
+  if (!data) {
+    return null;
   }
+
+  return data.tracks.map((track, index) => (
+    <Track ranking={index + 1} key={track.songUrl} {...track} />
+  ));
+}
