@@ -6,6 +6,16 @@ const project = ({project}) => {
   return (
     <>
       <h1>{project.title}</h1>
+      <h1>{project.description}</h1>
+      <ul>
+        {project.stack.map((item, i) => { 
+          return <li key={i}>{item}</li>
+        })}
+      </ul>
+      <Link href={project.projectUrl}>
+Visit Link
+</Link>
+      <a><img className="card-img-top" src={project.image} alt="project image" /></a>
       <br />
       <Link href="/projects">Back</Link>
     </>
