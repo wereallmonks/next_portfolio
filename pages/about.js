@@ -7,20 +7,20 @@ const About = () => {
       <title>About Me</title>
       <h1>More about me and my interests</h1>
       <div>
-        My love for science led me to pursue a degree in physics, and it also
-        opened the door to a world where my love for problem solving and
-        creativity would evolve and blend together. In college I learned the
-        basics of programming, but afterwards I would contine learning on my
-        own. I became addicted to creating applications for the web and seeing
-        how it all unfolds into something user-friendly, accessible, and
-        interesting.
-        <h2>
-          When I am not coding, you will find me making meals with friends,
-          baking, kickboxing, doing yoga, reading, and hanging out with my
-          little family: husband, Ryan, and tortie Siamese, Lenù.
-        </h2>
+        My inquisitive nature led me to pursue a degree in physics, but it also
+        opened a door to a world where wonder and creativity would evolve and
+        blend together with programming. In college I learned the basics of
+        writing programs with tools such as Fortran and C++, but afterwards I
+        contined learning on my own. I became addicted to JavaScript and began
+        creating applications for the web. I love seeing how it all unfolds into
+        something user-friendly, accessible, and interesting.
+        <br />
+        When I am not coding, you will find me making meals with friends,
+        baking, kickboxing, doing yoga, reading, and hanging out with my little
+        family: husband, Ryan, and tortie Siamese, Lenù.
+        <br />
       </div>
-      <br />
+
       <h1>
         I also collect records and I'm a big music nerd. If you're interested,
         this is what I've been listening to lately
