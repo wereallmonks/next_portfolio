@@ -1,11 +1,13 @@
 module.exports = {
-  purge: ['./pages/**/*.{js}', './components/**/*.{js}'],
+  mode: "jit",
+  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+   extend: {},
   },
   variants: {
-    extend: {},
+   extend: {},
   },
   plugins: [],
-}
+};
+  

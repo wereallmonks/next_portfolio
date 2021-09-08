@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import navStyles from '../styles/Nav.module.css'
-import ProjectList from './ProjectList'
 
 export default function Nav() {
   return (
