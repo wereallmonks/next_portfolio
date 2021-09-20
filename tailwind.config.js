@@ -1,13 +1,16 @@
 module.exports = {
   mode: "jit",
-  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-   extend: {},
+    extend: {
+      minHeight: {
+        "40vh": "40vh",
+      },
+    },
   },
   variants: {
-   extend: {},
+    extend: {},
   },
   plugins: [],
 };
-  

@@ -1,0 +1,196 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background: #131415;
+  font-size: 24px;
+  --gradient-angle: to right;
+  --ink-light: #fff;
+  --spacing-txt: 0.675rem 0;
+  --text-white: #fff;
+  --text-primary: "Cormorant", serif;
+  --text-second: "Montserrat", serif;
+  --prim-background: #040404;
+  --prim-bg-red: #7f1d1d;
+  --prim-bg-green: #2d4d4e;
+  --prim-bg-blue: #526b89;
+}
+::selection {
+  background: #dd796f;
+}
+@media (max-width: 56.25rem) {
+  :root {
+    font-size: 16px;
+  }
+}
+@media (max-width: 37.5rem) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 100%;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Cormorant", serif;
+}
+body {
+  background: #131415;
+  -o-border-image: -o-linear-gradient(
+      var(--angle),
+      #526b89 10%,
+      #2d4d4e 25%,
+      #7f1d1d 80%
+    )
+    1;
+  border-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(var(--angle)),
+      color-stop(10%, #526b89),
+      color-stop(25%, #2d4d4e),
+      color-stop(80%, #7f1d1d)
+    )
+    1;
+  border-image: linear-gradient(
+      var(--angle),
+      #526b89 10%,
+      #2d4d4e 25%,
+      #7f1d1d 80%
+    )
+    1;
+  border-style: solid;
+  border-width: 0.5rem 0 0;
+  grid-template-rows: auto 1fr auto;
+  --angle: 0deg;
+  animation: 10s rotate linear infinite;
+}
+.prim-background {
+  background: var(--prim-background);
+}
+.prim-bg-red {
+  background: var(--prim-bg-red);
+}
+.prim-bg-green {
+  background: var(--prim-bg-green);
+}
+.prim-bg-blue {
+  background: var(--prim-bg-blue);
+}
+header nav a,
+button {
+  font-family: var(--text-second);
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 25deg;
+  inherits: false;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+p {
+  margin: var(--spacing-txt);
+  color: var(--text-white);
+}
+p.no-margin {
+  margin: 0 !important;
+}
+.alpha {
+  font-family: "Montserrat", sans-serif;
+}
+.vzion-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120ch;
+  padding: 1rem;
+  @apply p-4 mx-auto flex;
+}
+.solid-sq {
+  height: 21rem;
+}
+/* .vzion--wrapper {
+  height: 750px;
+  width: 49%;
+  margin: 0;
+  padding 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #526B89;
+} */
+/* #site-footer .vzion-wrapper {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+} */
+.spotify--player {
+  @apply flex justify-center mx-auto;
+}
+.footer--container {
+  padding-bottom: 0;
+  padding-top: 0;
+  @apply pb-0 pt-0;
+}
+.vzion-icon-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1.5rem;
+  padding: 0;
+  position: relative;
+  margin-right: 1rem;
+  width: 95px;
+  height: 95px;
+}
+.icon-footer-row a {
+}
+/* 
+Project Landing Page */
+
+.project-wrapper {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px) saturate(100%) contrast(45%) brightness(130%);
+  content: "";
+}
+
+/* 
+need to add the filters plugin https://github.com/benface/tailwindcss-filters */
+
+.btn-alt1 {
+  background: #526b89;
+  border: 1px solid #526b89;
+}
+.btn-alt2 {
+  background: #2d4d4e;
+  border: 1px solid #2d4d4e;
+}
+.btn-alt3 {
+  background: #cfe6f5;
+  border: 1px solid #cfe6f5;
+}
