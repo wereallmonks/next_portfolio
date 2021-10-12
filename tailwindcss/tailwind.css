@@ -8,7 +8,7 @@
   font-size: 24px;
   --gradient-angle: to right;
   --ink-light: #fff;
-  --spacing-txt: 0.675rem 0;
+  --spacing-txt: 0.375rem 0;
   --text-white: #fff;
   --text-primary: "Cormorant", serif;
   --text-second: "Montserrat", serif;
@@ -22,12 +22,12 @@
 }
 @media (max-width: 56.25rem) {
   :root {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (max-width: 37.5rem) {
   :root {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -45,37 +45,15 @@ body {
   overflow-y: auto;
   font-family: "Cormorant", serif;
 }
-body {
-  background: #131415;
-  -o-border-image: -o-linear-gradient(
-      var(--angle),
-      #526b89 10%,
-      #2d4d4e 25%,
-      #7f1d1d 80%
-    )
-    1;
-  border-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(var(--angle)),
-      color-stop(10%, #526b89),
-      color-stop(25%, #2d4d4e),
-      color-stop(80%, #7f1d1d)
-    )
-    1;
-  border-image: linear-gradient(
-      var(--angle),
-      #526b89 10%,
-      #2d4d4e 25%,
-      #7f1d1d 80%
-    )
-    1;
-  border-style: solid;
-  border-width: 0.5rem 0 0;
-  grid-template-rows: auto 1fr auto;
-  --angle: 0deg;
-  animation: 10s rotate linear infinite;
+.sub--page h2 span {
+  @apply pr-2 relative;
+  background: var(--prim-background);
+}
+.sub--page h2::after {
+  @apply absolute bottom-0 left-0 right-4 h-3.5 border-solid border-green-800;
+  content: "";
+  z-index: -1;
+  border-top-width: 1px;
 }
 .prim-background {
   background: var(--prim-background);
@@ -104,7 +82,13 @@ button {
     --angle: 360deg;
   }
 }
-
+.page-title {
+  color: var(--text-white);
+  z-index: 999;
+  margin-bottom: -1rem;
+  overflow: overlay;
+  @apply text-3xl bg-gradient-to-r from-red-700 to-red-800 py-3 px-4 inline-block;
+}
 p {
   margin: var(--spacing-txt);
   color: var(--text-white);
@@ -115,22 +99,43 @@ p.no-margin {
 .alpha {
   font-family: "Montserrat", sans-serif;
 }
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.spotify-bg {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='46' viewBox='0 0 70 46'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2339373c' fill-opacity='0.42'%3E%3Cpolygon points='68 44 62 44 62 46 56 46 56 44 52 44 52 46 46 46 46 44 40 44 40 46 38 46 38 44 32 44 32 46 26 46 26 44 22 44 22 46 16 46 16 44 12 44 12 46 6 46 6 44 0 44 0 42 8 42 8 28 6 28 6 0 12 0 12 28 10 28 10 42 18 42 18 28 16 28 16 0 22 0 22 28 20 28 20 42 28 42 28 28 26 28 26 0 32 0 32 28 30 28 30 42 38 42 38 0 40 0 40 42 48 42 48 28 46 28 46 0 52 0 52 28 50 28 50 42 58 42 58 28 56 28 56 0 62 0 62 28 60 28 60 42 68 42 68 0 70 0 70 46 68 46'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
 .vzion-wrapper {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 120ch;
-  padding: 1rem;
-  @apply p-4 mx-auto flex;
+  @apply mx-auto flex;
 }
 .solid-sq {
   height: 21rem;
+}
+.gradient--bg {
+  background: linear-gradient(114deg, #526b89, #2d4d4e, #7f1d1d);
+  background-size: 180% 180%;
+  animation: gradient-animate 5s ease infinite;
+}
+@keyframes gradient-animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 /* .vzion--wrapper {
   height: 750px;
@@ -146,12 +151,7 @@ p.no-margin {
   padding-top: 5rem;
   padding-bottom: 5rem;
 } */
-.spotify--player {
-  @apply flex justify-center mx-auto;
-}
 .footer--container {
-  padding-bottom: 0;
-  padding-top: 0;
   @apply pb-0 pt-0;
 }
 .vzion-icon-button {

@@ -7,6 +7,9 @@ module.exports = {
       minHeight: {
         "40vh": "40vh",
       },
+      margin: {
+        "-22": "-5.5rem",
+      },
     },
   },
   variants: {

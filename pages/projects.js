@@ -2,6 +2,7 @@ import { server } from "../config";
 import ProjectList from "../components/ProjectList";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 const projects = ({ projects }) => {
   return (
@@ -19,30 +20,30 @@ const projects = ({ projects }) => {
               />
             </figure>
             <p className='proj--number text-6xl text-white font-thin absolute -top-2 -left-6'>
-              01
+              0{projects[0].id}
             </p>
             <div
               className='project-wrapper flex flex-col ml-auto sm:ml-12 -mt-14 sm:-mt-16 w-4/5 sm:w-96 bg-white shadow-lg bg-clip-padding bg-opacity-20 border border-none relative'
               style={{ backdropFilter: "blur(20px)" }}
             >
               <h2 className='text-4xl text-white font-extrabold px-8 pt-3 mt-4'>
-                Project Title Longer Title With Three Lines
+                {projects[0].title}
               </h2>
               <p className='text-sm text-white px-8 py-4 leading-6'>
-                Pellentesque habitant morbi tristique senectus et netus et
-                malesuada. Praesent adipiscing. Vestibulum volutpat pretium
-                libero.
+                {projects[0].description}
               </p>
               <button className='w-1/4 self-end p-4 btn-alt1 transform translate-x-2 translate-y-2 shadow-2xl'>
-                <span className='sr-only'>Link to Project #1</span>
-                <svg
-                  className='fill-current text-white hover:text-black h-5 w-8 mx-auto'
-                  xmlns='http://www.w3.org/2000/svg'
-                  fillRule='evenodd'
-                  clipRule='evenodd'
-                >
-                  <path d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z' />
-                </svg>
+                <span className='sr-only'></span>
+                <Link href='/project/1'>
+                  <svg
+                    className='fill-current text-white hover:text-black h-5 w-8 mx-auto'
+                    xmlns='http://www.w3.org/2000/svg'
+                    fillRule='evenodd'
+                    clipRule='evenodd'
+                  >
+                    <path d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z' />
+                  </svg>
+                </Link>
               </button>
             </div>
           </div>
@@ -56,29 +57,30 @@ const projects = ({ projects }) => {
               />
             </figure>
             <p className='proj--number text-6xl text-white font-thin absolute top-6 -left-4'>
-              02
+              0{projects[1].id}
             </p>
             <div
               className='project-wrapper flex flex-col sm:w-96 md:w-96 w-4/5 ml-auto sm:ml-12 sm:-mt-16 -mt-14 relative bg-white shadow-lg bg-clip-padding bg-opacity-20 border border-none'
               style={{ backdropFilter: "blur(20px)" }}
             >
               <h2 className='text-4xl text-white font-extrabold px-8 py-2 mt-4'>
-                Project Title Line Longer
+                {projects[1].title}
               </h2>
               <p className='text-sm text-white px-8 my-4 leading-6 min-h-0 h-24 overflow-hidden'>
-                Nullam accumsan lorem in dui. Praesent adipiscing. Vestibulum
-                volutpat pretium libero.
+                {projects[1].description}
               </p>
               <button className='w-1/4 flex self-end p-4 btn-alt2 transform translate-x-2 translate-y-2 shadow-2xl'>
-                <span className='sr-only'>Link to Project #2</span>
-                <svg
-                  className='fill-current text-white hover:text-black h-5 w-8 mx-auto'
-                  xmlns='http://www.w3.org/2000/svg'
-                  fillRule='evenodd'
-                  clipRule='evenodd'
-                >
-                  <path d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z' />
-                </svg>
+                <span className='sr-only'></span>
+                <Link href='/project/2'>
+                  <svg
+                    className='fill-current text-white hover:text-black h-5 w-8 mx-auto'
+                    xmlns='http://www.w3.org/2000/svg'
+                    fillRule='evenodd'
+                    clipRule='evenodd'
+                  >
+                    <path d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z' />
+                  </svg>
+                </Link>
               </button>
             </div>
           </div>
@@ -92,14 +94,14 @@ const projects = ({ projects }) => {
               />
             </figure>
             <p className='proj--number text-6xl text-white font-thin absolute sm:bottom-0 sm:left-6 top-2 -left-4'>
-              03
+              0{projects[2].id}
             </p>
             <div
               className='project-wrapper relative h-auto flex flex-col sm:w-96 md:w-6/12 w-4/5 ml-auto -mt-14 sm:-ml-16 sm:mt-4 bg-white shadow-lg bg-clip-padding bg-opacity-20 border border-none'
               style={{ backdropFilter: "blur(20px)" }}
             >
               <h2 className='text-4xl text-white font-extrabold px-8 pt-6 border-left border-red-600'>
-                Project Title With Two Lines
+                {projects[2].title}
               </h2>
               <p className='text-sm text-white px-8 pb-8 pt-4 leading-6'>
                 Pellentesque habitant morbi tristique senectus et netus et
@@ -107,15 +109,17 @@ const projects = ({ projects }) => {
                 Praesent adipiscing. Vestibulum volutpat pretium libero.
               </p>
               <button className='w-1/4 flex self-end border border-clear p-4 btn-alt3 transform translate-x-2 translate-y-2 shadow-2xl'>
-                <span className='sr-only'>Link to Project #3</span>
-                <svg
-                  className='fill-current text-black hover:text-gray-400 h-5 w-8 mx-auto'
-                  xmlns='http://www.w3.org/2000/svg'
-                  fillRule='evenodd'
-                  clipRule='evenodd'
-                >
-                  <path d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z' />
-                </svg>
+                <span className='sr-only'></span>
+                <Link href='/project/3'>
+                  <svg
+                    className='fill-current text-black hover:text-gray-400 h-5 w-8 mx-auto'
+                    xmlns='http://www.w3.org/2000/svg'
+                    fillRule='evenodd'
+                    clipRule='evenodd'
+                  >
+                    <path d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z' />
+                  </svg>
+                </Link>
               </button>
             </div>
           </div>
@@ -129,14 +133,14 @@ const projects = ({ projects }) => {
               />
             </figure>
             <p className='proj--number text-6xl text-white font-thin absolute top-2 -left-4'>
-              04
+              0{projects[3].id}
             </p>
             <div
               className='project-wrapper flex flex-col sm:ml-12 -mt-14 w-4/5 sm:w-96 relative ml-auto bg-white shadow-lg bg-clip-padding bg-opacity-20 border border-none'
               style={{ backdropFilter: "blur(20px)" }}
             >
               <h2 className='text-4xl text-white font-extrabold px-8 pt-3 mt-4'>
-                Project Title Longer Title With Three Lines
+                {projects[3].title}
               </h2>
               <p className='text-sm text-white px-8 py-4'>
                 Pellentesque habitant morbi tristique senectus et netus et
@@ -144,15 +148,17 @@ const projects = ({ projects }) => {
                 Praesent adipiscing. Vestibulum volutpat pretium libero.
               </p>
               <button className='w-1/4 self-end p-4 btn-4 bg-red-900 transform translate-x-2 translate-y-2 shadow-2xl'>
-                <span className='sr-only'>Link to Project #4</span>
-                <svg
-                  className='fill-current text-white hover:text-black h-5 w-8 mx-auto'
-                  xmlns='http://www.w3.org/2000/svg'
-                  fillRule='evenodd'
-                  clipRule='evenodd'
-                >
-                  <path d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z' />
-                </svg>
+                <span className='sr-only'></span>
+                <Link href='/project/4'>
+                  <svg
+                    className='fill-current text-white hover:text-black h-5 w-8 mx-auto'
+                    xmlns='http://www.w3.org/2000/svg'
+                    fillRule='evenodd'
+                    clipRule='evenodd'
+                  >
+                    <path d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z' />
+                  </svg>
+                </Link>
               </button>
             </div>
           </div>
@@ -169,7 +175,7 @@ const projects = ({ projects }) => {
 };
 
 export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/projects`);
+  const res = await fetch(`${server}/api/projects/`);
   const projects = await res.json();
 
   return {

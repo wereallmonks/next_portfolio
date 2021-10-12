@@ -62,7 +62,7 @@ export default function Nav() {
             </li>
             <li role='none'>
               <a
-                className='sm:inline-flex sm:items-center bg-gray-800 sm:border-0 border-l-2 border-b-2 py-2 px-3 text-bold hover:bg-gray-700 rounded text-xs font-thin mt-4 md:mt-0'
+                className='inline-flex sm:items-center bg-gray-800  py-2 px-3 text-bold hover:bg-gray-700 border-2 border-transparent hover:border-2 rounded text-xs font-thin mt-4 md:mt-0'
                 href='/projects'
                 role='menuitem'
                 aria-haspopup='true'
@@ -87,17 +87,17 @@ export default function Nav() {
         </nav>
         <div className='fixed right-0 top-8 mr-8 pb-20 z-0 social-side self-end ml-10 social-side transform translate-y-10'>
           <div className='flex relative pb-12 md:pb-40'>
-            <div className='h-full w-6 absolute inset-0 flex items-center justify-center'>
+            <div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
               <div className='h-full w-1 bg-gray-800 pointer-events-none'></div>
             </div>
           </div>
           <div className='flex relative pb-12'>
-            <div className='h-full w-6 absolute inset-0 flex items-center justify-center'>
+            <div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
               <div className='h-full w-1 bg-gray-800 pointer-events-none'></div>
             </div>
-            <div className='flex-shrink-0 w-6 h-10 rounded-full prim-background inline-flex items-center justify-center text-white relative z-10'>
+            <div className='flex-shrink-0 rounded-full prim-background inline-flex items-center justify-center text-white relative z-10'>
               <svg
-                className='fill-current text-gray-500 hover:text-gray-100
+                className='fill-current w-10 p-2 text-gray-500 hover:text-gray-100
                     '
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 26 28'
@@ -109,12 +109,12 @@ export default function Nav() {
             </div>
           </div>
           <div className='flex relative pb-12'>
-            <div className='h-full w-6 absolute inset-0 flex items-center justify-center'>
+            <div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
               <div className='h-full w-1 bg-gray-800 pointer-events-none'></div>
             </div>
-            <div className='flex-shrink-0 w-6 h-10 rounded-full prim-background inline-flex items-center justify-center text-white relative z-10'>
+            <div className='flex-shrink-0 rounded-full prim-background inline-flex items-center justify-center text-white relative z-10'>
               <svg
-                className='fill-current text-gray-500 hover:text-gray-100 
+                className='fill-current w-10 p-2 text-gray-500 hover:text-gray-100 
                   '
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 32 32'
@@ -126,12 +126,12 @@ export default function Nav() {
             </div>
           </div>
           <div className='flex relative pb-12'>
-            <div className='h-full w-6 absolute inset-0 flex items-center justify-center'>
+            <div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
               <div className='h-full w-1 bg-gray-800 pointer-events-none'></div>
             </div>
-            <div className='flex-shrink-0 w-6 h-10 rounded-full prim-background inline-flex items-center justify-center text-white relative z-10'>
+            <div className='flex-shrink-0 rounded-full prim-background inline-flex items-center justify-center text-white relative z-10'>
               <svg
-                className='fill-current text-gray-500 hover:text-gray-100
+                className='fill-current w-10 p-2 text-gray-500 hover:text-gray-100
                   '
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 32 32'
@@ -143,9 +143,9 @@ export default function Nav() {
             </div>
           </div>
           <div className='flex relative'>
-            <div className='flex-shrink-0 w-6 h-10 rounded-full prim-background inline-flex items-center justify-center text-white relative z-10'>
+            <div className='flex-shrink-0 rounded-full prim-background inline-flex items-center justify-center text-white relative z-10'>
               <svg
-                className='fill-current text-gray-500 hover:text-gray-100
+                className='fill-current w-10 p-2 text-gray-500 hover:text-gray-100
                     '
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 26 28'

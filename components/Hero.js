@@ -1,15 +1,15 @@
 export default function Hero() {
   return (
     <div className='min-h-40vh pb-20 text-left '>
-      <div className='grid xl:grid-cols-2 grid-cols-none md:grid-flow-col mr-14 mt-10 md:mr-0 sm:gap-0'>
-        <div className='solid-sq bg-red-500 px-10 py-10'>
+      <div className='grid xl:grid-cols-2 grid-cols-none md:grid-flow-col mr-14 -mt-22 md:mr-0 sm:gap-0'>
+        <div className='solid-sq gradient--bg px-10 py-10'>
           <div className='grid justify-end relative text-wrap transform translate-x-1/4 translate-y-20 z-50'>
             <h1 className='text-6xl text-left text-gray-200'>
               I love building
               <br /> a better web
             </h1>
             <p className='no-margin text-xl text-left w-7/12'>
-              I specialize in building websites and applications
+              I specialize in developing websites and applications
             </p>
             <button className='w-8 p-1.5 btn-4 bg-transparent border-none transform translate-y-2'>
               <span className='sr-only'>Link to Project #4</span>

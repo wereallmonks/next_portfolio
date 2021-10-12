@@ -24,9 +24,9 @@ export default function About() {
                   <svg
                     fill='none'
                     stroke='currentColor'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='3'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='3'
                     className='text-yellow-200 opacity-70 w-6 h-6 flex-shrink-0 mr-4'
                     viewBox='0 0 24 24'
                   >
@@ -41,9 +41,9 @@ export default function About() {
                   <svg
                     fill='none'
                     stroke='currentColor'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='3'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='3'
                     className='text-yellow-200 opacity-70 w-6 h-6 flex-shrink-0 mr-4'
                     viewBox='0 0 24 24'
                   >
@@ -58,9 +58,9 @@ export default function About() {
                   <svg
                     fill='none'
                     stroke='currentColor'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='3'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='3'
                     className='text-yellow-200 opacity-70 w-6 h-6 flex-shrink-0 mr-4'
                     viewBox='0 0 24 24'
                   >
@@ -75,9 +75,9 @@ export default function About() {
                   <svg
                     fill='none'
                     stroke='currentColor'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='3'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='3'
                     className='text-yellow-200 opacity-70 w-6 h-6 flex-shrink-0 mr-4'
                     viewBox='0 0 24 24'
                   >
@@ -128,14 +128,17 @@ export default function About() {
             </nav>
           </div>
         </div>
-        <button className='flex flex-nowrap justify-center mx-auto mt-16 text-white prim-bg-green border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg'>
+        <button
+          href='/about'
+          className='flex flex-nowrap justify-center mx-auto mt-16 text-white prim-bg-green border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg'
+        >
           Wait there's more{" "}
           <svg
             fill='none'
             stroke='currentColor'
-            stroke-linecap='round'
-            stroke-linejoin='round'
-            stroke-width='2'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+            strokeWidth='2'
             className='self-center w-4 h-4 ml-2'
             viewBox='0 0 24 24'
           >
