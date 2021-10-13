@@ -52,8 +52,8 @@ const About = () => {
                   but it also opened a door to a world where wonder and
                   creativity would evolve and blend together with programming.
                   In college I learned the basics of writing programs with tools
-                  such as Fortran and C++,and afterwards I contined learning on
-                  my own. I became addicted to JavaScript and began creating
+                  such as Fortran and C++, and afterwards I continued learning
+                  on my own. I became hooked on JavaScript and began creating
                   applications for the web. I love seeing how it all unfolds
                   into something user-friendly, accessible, and interesting.
                 </p>

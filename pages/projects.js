@@ -1,5 +1,5 @@
 import { server } from "../config";
-import ProjectList from "../components/ProjectList";
+import Head from "next/head";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Link from "next/link";
@@ -7,8 +7,19 @@ import Link from "next/link";
 const projects = ({ projects }) => {
   return (
     <>
+      <Head>
+        <title>claudiamarie.me projects</title>
+        <meta
+          name='portfolio'
+          content='web development, programming, next.js'
+        />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&display=swap'
+          rel='stylesheet'
+        ></link>
+      </Head>
       <Nav />
-      <article className='container max-w-6xl mx-auto'>
+      <article className='container max-w-screen-xl mx-auto'>
         <div className='proj block sm:grid sm:grid-cols-2 gap-28 mx-6 my-6'>
           <div className='h-auto rounded-md block sm:flex flex-col justify-center my-16 sm:my-0 relative'>
             <figure className='h-full'>
@@ -164,11 +175,6 @@ const projects = ({ projects }) => {
           </div>
         </div>
       </article>
-      <div>
-        These are my projects
-        <br />
-        <ProjectList projects={projects} />
-      </div>
       <Footer />
     </>
   );

@@ -5,7 +5,7 @@ const Project = ({ project }) => {
   return (
     <Link href='/project/[id]' as={`/project/${project.id}`}>
       <a className={projectStyles.card}>
-        <h3>{project.title} &rarr;</h3>
+        <h1>{project.title} &rarr;</h1>
         <p>{project.description}</p>
       </a>
     </Link>

@@ -88,6 +88,31 @@ button {
   margin-bottom: -1rem;
   overflow: overlay;
   @apply text-3xl bg-gradient-to-r from-red-700 to-red-800 py-3 px-4 inline-block;
+  animation-name: heading-animation;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+}
+@keyframes heading-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2rem);
+    -moz-transform: translateX(2rem);
+    transform: translateX(2rem);
+  }
+  0% {
+    -webkit-transform: translateX(0.4rem);
+    -moz-transform: translateX(0.4rem);
+    transform: translateX(0.4rem);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 p {
   margin: var(--spacing-txt);
@@ -95,6 +120,9 @@ p {
 }
 p.no-margin {
   margin: 0 !important;
+}
+.btn a {
+  @apply p-2 border-2 border-opacity-70 border-gray-400 hover:border-gray-200 hover:text-gray-100;
 }
 .alpha {
   font-family: "Montserrat", sans-serif;
@@ -177,6 +205,12 @@ Project Landing Page */
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(30px) saturate(100%) contrast(45%) brightness(130%);
   content: "";
+}
+.project-vert {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: var(--text-second);
+  @apply text-green-400 opacity-30 text-2xl uppercase font-extrabold;
 }
 
 /* 
