@@ -85,9 +85,8 @@ button {
 .page-title {
   color: var(--text-white);
   z-index: 999;
-  margin-bottom: -1rem;
   overflow: overlay;
-  @apply text-3xl bg-gradient-to-r from-red-700 to-red-800 py-3 px-4 inline-block;
+  @apply -mb-1 mt-10 md:mt-0 text-3xl bg-gradient-to-r from-red-700 to-red-800 py-3 px-4 inline-block;
   animation-name: heading-animation;
   -webkit-animation-duration: 4s;
   -moz-animation-duration: 4s;

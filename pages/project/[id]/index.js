@@ -32,7 +32,7 @@ const project = ({ project }) => {
             <div>
               <div className='flex divide-x-8 divide-green-900'>
                 <h3 className='project-vert cursor-text'>Stack</h3>
-                <ul className='pl-4 flex flex-col items-left justify-center my-1'>
+                <ul className='pl-4 flex flex-col items-left justify-start my-1'>
                   {project.stack.map((item, i) => {
                     return (
                       <li

@@ -28,8 +28,8 @@ const About = () => {
               className='img-responsive'
               src='https://placekitten.com/g/600/500'
             />
-            <aside className='bg-black py-12'>
-              <div className='spotify-bg py-10 mx-auto w-3/4'>
+            <aside className='spotify-bg py-12'>
+              <div className='py-10 mx-auto w-3/4'>
                 <iframe
                   height='380'
                   loading='lazy'
@@ -47,7 +47,7 @@ const About = () => {
                 <h2 className='relative capitalize font-extrabold text-gray-300 text-2xl title-font mb-1 w-full pr-4'>
                   <span>How It All Began</span>
                 </h2>
-                <p className='alpha leading-relaxed text-sm w-11/12'>
+                <p className='alpha leading-relaxed text-sm w-9/12'>
                   My inquisitive nature led me to pursue a degree in physics,
                   but it also opened a door to a world where wonder and
                   creativity would evolve and blend together with programming.
@@ -64,7 +64,7 @@ const About = () => {
                 <h2 className='relative apitalize font-extrabold text-gray-300 text-2xl title-font mb-1'>
                   <span>Evolution</span>
                 </h2>
-                <p className='alpha leading-relaxed text-sm w-11/12 mb-5'>
+                <p className='alpha leading-relaxed text-sm w-9/12 mb-5'>
                   When I am not coding, you will find me making meals with
                   friends, baking, kickboxing, doing yoga, reading, and hanging
                   out with my little family: husband, Ryan [add a link], and
@@ -73,7 +73,7 @@ const About = () => {
                 <h2 className='relative capitalize font-extrabold text-gray-300 text-2xl  title-font mb-3'>
                   <span>Turn it up</span>
                 </h2>
-                <p className='alpha leading-relaxed text-sm w-11/12 text-white mb-3'>
+                <p className='alpha leading-relaxed text-sm w-9/12 text-white mb-3'>
                   I also collect records and I'm a big music nerd. If you're
                   interested, this is what I've been listening to lately as well
                   as my current favorite playlist.

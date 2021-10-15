@@ -1,8 +1,8 @@
 export default function About() {
   return (
     <section className='text-gray-400 bg-primary body-font relative'>
-      <div className='container px-5 py-24 mx-auto'>
-        <div className='text-center mb-20'>
+      <div className='container px-5 py-0 md:py-24 mx-auto'>
+        <div className='text-left md:text-center mb-10'>
           <h1 className='sm:text-3xl text-2xl md:text-5xl font-medium text-center title-font text-white mb-4'>
             Skills &amp; <br />
             Experience
@@ -14,11 +14,11 @@ export default function About() {
           </p>
         </div>
         <div className='flex flex-wrap -m-4 justify-center'>
-          <div className='p-4 lg:w-1/4 sm:w-1/2 w-full'>
-            <h2 className='font-medium title-font tracking-wide text-white mb-4 text-lg text-center sm:text-left uppercase'>
+          <div className='p-4 lg:w-1/4 sm:w-1/2 w-min ml-auto mr-auto'>
+            <h2 className='title-font tracking-wide text-white mb-4 text-xl font-extrabold text-center sm:text-left uppercase'>
               Current Stack
             </h2>
-            <div className='flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2'>
+            <div className='flex flex-col items-start sm:text-left text-center -mb-1 space-y-1 md:space-y-2'>
               <a className='alpha flex flex-nowrap py-2'>
                 <span className='bg-transparent w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center '>
                   <svg
@@ -90,36 +90,36 @@ export default function About() {
             </div>
           </div>
 
-          <div className='p-4 lg:w-2/4 sm:w-1/2 w-full'>
-            <h2 className='font-medium title-font tracking-wide text-white mb-4 text-lg text-center sm:text-left uppercase'>
+          <div className='p-4 lg:w-2/4 sm:w-1/2 w-8/12'>
+            <h2 className='title-font tracking-wide text-white mb-4 text-xl font-extrabold text-center sm:text-left uppercase'>
               Skills
             </h2>
             <nav className='flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2'>
-              <a className='flex flex-col w-full py-1 alpha'>
+              <a className='flex flex-col w-4/5 py-1 alpha'>
                 <div className='h-1 bg-gray-700 mb-1.5 opacity-80 rounded overflow-hidden'>
                   <div className='w-2/4 h-full bg-pink-500 opacity-80'></div>
                 </div>
                 HTML
               </a>
-              <a className='flex flex-col w-full py-1 alpha'>
+              <a className='flex flex-col w-4/5 py-1 alpha'>
                 <div className='h-1 bg-gray-700 mb-1.5 opacity-80 rounded overflow-hidden'>
                   <div className='w-3/4 h-full bg-yellow-100'></div>
                 </div>
                 CSS
               </a>
-              <a className='flex flex-col w-full py-1 alpha'>
+              <a className='flex flex-col w-4/5 py-1 alpha'>
                 <div className='h-1 bg-gray-700 mb-1.5 opacity-80 rounded overflow-hidden'>
                   <div className='w-2/4 h-full prim-bg-red'></div>
                 </div>
                 Javascript
               </a>
-              <a className='flex flex-col w-full py-1 alpha'>
+              <a className='flex flex-col w-4/5 py-1 alpha'>
                 <div className='h-1 bg-gray-700 mb-1.5 opacity-80 rounded overflow-hidden'>
                   <div className='w-4/4 h-full prim-bg-green'></div>
                 </div>
                 Git
               </a>
-              <a className='flex flex-col w-full py-1 alpha'>
+              <a className='flex flex-col w-4/5 py-1 alpha'>
                 <div className='h-1 bg-gray-700 mb-1.5 rounded overflow-hidden'>
                   <div className='w-2/4 h-full prim-bg-blue'></div>
                 </div>

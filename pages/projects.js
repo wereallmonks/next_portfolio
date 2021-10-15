@@ -20,9 +20,9 @@ const projects = ({ projects }) => {
       </Head>
       <Nav />
       <article className='container max-w-screen-xl mx-auto'>
-        <div className='proj block sm:grid sm:grid-cols-2 gap-28 mx-6 my-6'>
-          <div className='h-auto rounded-md block sm:flex flex-col justify-center my-16 sm:my-0 relative'>
-            <figure className='h-full'>
+        <div className='proj block sm:grid sm:grid-cols-2 ml-6 mr-24 md:mr-12 my-6'>
+          <div className='h-auto rounded-md block md:flex flex-col justify-center my-16 sm:my-0 relative'>
+            <figure className='h-auto'>
               <img
                 src='https://images.unsplash.com/photo-1603285990954-183e50a874b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNzg2MDgzNg&ixlib=rb-1.2.1&q=80&w=400'
                 width={400}
@@ -34,7 +34,7 @@ const projects = ({ projects }) => {
               0{projects[0].id}
             </p>
             <div
-              className='project-wrapper flex flex-col ml-auto sm:ml-12 -mt-14 sm:-mt-16 w-4/5 sm:w-96 bg-white shadow-lg bg-clip-padding bg-opacity-20 border border-none relative'
+              className='project-wrapper flex flex-col ml-auto sm:ml-12 -mt-14 sm:-mt-16 w-4/5 sm:w-72 bg-white shadow-lg bg-clip-padding bg-opacity-20 border border-none relative'
               style={{ backdropFilter: "blur(20px)" }}
             >
               <h2 className='text-4xl text-white font-extrabold px-8 pt-3 mt-4'>
@@ -58,8 +58,8 @@ const projects = ({ projects }) => {
               </button>
             </div>
           </div>
-          <div className='h-auto rounded-md block sm:flex flex-col justify-center my-6 sm:my-0 relative'>
-            <figure className='h-full'>
+          <div className='h-auto rounded-md block md:flex flex-col justify-center my-6 sm:my-0 relative'>
+            <figure className='h-auto'>
               <img
                 src='https://images.unsplash.com/photo-1530288782965-fbad40327074?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNzgwNDE4OQ&ixlib=rb-1.2.1&q=80&w=400'
                 width={400}
@@ -71,7 +71,7 @@ const projects = ({ projects }) => {
               0{projects[1].id}
             </p>
             <div
-              className='project-wrapper flex flex-col sm:w-96 md:w-96 w-4/5 ml-auto sm:ml-12 sm:-mt-16 -mt-14 relative bg-white shadow-lg bg-clip-padding bg-opacity-20 border border-none'
+              className='project-wrapper flex flex-col sm:w-96 md:w-72 w-4/5 ml-auto sm:ml-12 sm:-mt-16 -mt-14 relative bg-white shadow-lg bg-clip-padding bg-opacity-20 border border-none'
               style={{ backdropFilter: "blur(20px)" }}
             >
               <h2 className='text-4xl text-white font-extrabold px-8 py-2 mt-4'>
@@ -95,7 +95,7 @@ const projects = ({ projects }) => {
               </button>
             </div>
           </div>
-          <div className='block sm:ml-24 sm:col-span-2 h-full sm:h-64 rounded-md sm:flex sm:flex-row items-center self-center align-center mx-auto my-0 sm:my-0 relative'>
+          <div className='block sm:ml-24 sm:col-span-2 h-full sm:h-64 rounded-md md:flex sm:flex-row items-center self-center align-center mx-auto my-0 md:my-6 relative'>
             <figure className='h-5/6'>
               <img
                 src='https://images.unsplash.com/photo-1626624338641-b99e0d32c958?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNzgwNDI1Mw&ixlib=rb-1.2.1&q=85'
