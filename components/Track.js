@@ -1,7 +1,7 @@
 export default function Track(track) {
   return (
-    <div className='relative flex sm:flex-nowrap items-center mt-2 mb-2'>
-      <span className='text-2xl font-bold text-gray-200 mr-2 text-opacity-90'>
+    <div className='relative flex sm:flex-nowrap items-center m-0'>
+      <span className='text-xl font-bold text-gray-200 mr-2 text-opacity-90'>
         {track.ranking}
       </span>
       <a

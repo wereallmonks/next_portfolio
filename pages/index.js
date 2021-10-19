@@ -1,11 +1,13 @@
 import Head from "next/head";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
-import About from "../components/About";
-import Hero from "../components/Hero";
-import Socialrow from "../components/Socialrow";
+import { server } from "../config";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
+import About from "@/components/About";
+import Hero from "@/components/Hero";
+import Socialrow from "@/components/Socialrow";
+import FpProject from "@/components/FpProject";
 
-const Home = () => {
+export default function Home({ projects }) {
   return (
     <>
       <Head>
@@ -22,21 +24,20 @@ const Home = () => {
       <Nav />
       <Hero />
       <About />
+      <FpProject title={projects.title} description={projects.description} />
       <Socialrow />
       <Footer />
     </>
   );
+}
+
+export const getStaticProps = async () => {
+  const res = await fetch(`${server}/api/projects/4`);
+  const projects = await res.json();
+
+  return {
+    props: {
+      projects,
+    },
+  };
 };
-
-// export const getStaticProps = async () => {
-//   const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
-//   const projects = await res.json()
-
-//   return {
-//     props: {
-//       projects,
-//     },
-//   }
-// }
-
-export default Home;

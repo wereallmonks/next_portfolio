@@ -46,11 +46,11 @@ body {
   font-family: "Cormorant", serif;
 }
 .sub--page h2 span {
-  @apply pr-2 relative;
-  background: var(--prim-background);
+  @apply pr-2 relative bg-opacity-0;
+  background-color: #161718;
 }
 .sub--page h2::after {
-  @apply absolute bottom-0 left-0 right-4 h-3.5 border-solid border-green-800;
+  @apply absolute bottom-3 left-0 right-1/4 h-3.5 border-solid border-green-800;
   content: "";
   z-index: -1;
   border-top-width: 1px;
@@ -86,7 +86,7 @@ button {
   color: var(--text-white);
   z-index: 999;
   overflow: overlay;
-  @apply -mb-1 mt-10 md:mt-0 text-3xl bg-gradient-to-r from-red-700 to-red-800 py-3 px-4 inline-block;
+  @apply -mb-1 mt-2 md:mt-0 text-3xl bg-gradient-to-r from-red-700 to-red-800 py-3 px-4 inline-block;
   animation-name: heading-animation;
   -webkit-animation-duration: 4s;
   -moz-animation-duration: 4s;
@@ -209,7 +209,7 @@ Project Landing Page */
   writing-mode: vertical-rl;
   text-orientation: upright;
   font-family: var(--text-second);
-  @apply text-green-400 opacity-30 text-2xl uppercase font-extrabold;
+  @apply text-green-400 opacity-30 text-2xl uppercase font-thin;
 }
 
 /* 

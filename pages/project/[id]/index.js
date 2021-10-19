@@ -20,23 +20,23 @@ const project = ({ project }) => {
       </Head>
       <Nav />
       <h1 className='page-title'>{project.title}</h1>
-      <span className='alpha font-extrabold  text-gray-300 text-sm h-8 p-2 bg-gray-800 capitalize tracking-wider shadow-xl inline-block transform translate-y-6 -translate-x-2 align-middle'>
+      <span className='font-light alpha text-gray-300 text-sm h-8 p-2 bg-gray-800 capitalize tracking-wide shadow-xl inline-block transform translate-y-4 -translate-x-14 align-middle'>
         project
       </span>
       <section className='text-gray-400 bg-primary body-font sub--page mb-16'>
         <div className='container max-w-screen-xl pl-10 pr-28 mt-12 mx-auto flex flex-wrap'>
-          <p className='alpha leading-relaxed text-sm w-11/12'>
+          <p className='alpha leading-relaxed text-sm w-11/12 lg:w-9/12 '>
             {project.summary}
           </p>
-          <div className='flex flex-nowrap w-full justify-between mr-12 my-8'>
-            <div>
-              <div className='flex divide-x-8 divide-green-900'>
+          <div className='flex flex-wrap sm:flex-nowrap w-full justify-between mr-12 my-8 black bg-opacity-40'>
+            <div className='w-60 sm:w-3/4 xl:w-72'>
+              <div className='flex divide-x-8 divide-green-900 bg-gray-600 bg-opacity-5 shadow-2xl px-4 py-4'>
                 <h3 className='project-vert cursor-text'>Stack</h3>
                 <ul className='pl-4 flex flex-col items-left justify-start my-1'>
                   {project.stack.map((item, i) => {
                     return (
                       <li
-                        className='alpha md:text-lg text-gray-200 pb-1'
+                        className='alpha md:text-sm text-gray-200 pb-1'
                         key={i}
                       >
                         {item}
@@ -46,10 +46,12 @@ const project = ({ project }) => {
                 </ul>
               </div>
             </div>
-            <div className='flex items-end trasform -translate-x-7 -translate-y-12'>
-              <Link href={project.projectUrl}>{project.title}</Link>
+            <div className='flex items-end trasform mt-6 mb-6 lg:m-0 lg:-translate-x-1'>
+              <Link href={project.projectUrl} alt={project.title}>
+                Visit
+              </Link>
               <svg
-                className='fill-current text-white hover:text-opacity-50 h-5 w-8 mx-auto lg:pl-2 transform translate-y-1 animate-pulse'
+                className='fill-current text-white hover:text-opacity-50 h-5 w-8 mx-auto pl-2 lg:pl-2 transform lg:translate-y-1 animate-pulse'
                 xmlns='http://www.w3.org/2000/svg'
                 fillRule='evenodd'
                 clipRule='evenodd'
@@ -66,7 +68,7 @@ const project = ({ project }) => {
               />
             </picture>
           </div>
-          <div className='btn block md:flex justify-center w-full my-4 py-4'>
+          <div className='block btn justify-center md:flex my-4 py-4 w-full bg-gradient-to-r from-green-800 to-green-900 shadow-2xl transform translate-y-24'>
             <Link href='/projects'>Back to Projects</Link>
           </div>
         </div>

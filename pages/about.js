@@ -1,7 +1,7 @@
 import { AiFillGithub } from "react-icons/ai";
-import Spotify from "../components/Spotify";
+import Spotify from "@/components/Spotify";
 import Head from "next/head";
-import Nav from "../components/Nav";
+import Nav from "@/components/Nav";
 import Footer from "../components/Footer";
 
 const About = () => {
@@ -41,13 +41,13 @@ const About = () => {
               </div>
             </aside>
           </div>
-          <div className='flex flex-col flex-wrap bg-black translate -translate-y-6 lg:py-2 -mb-10 lg:w-2/4 lg:pl-8 lg:text-left text-left md:text-center'>
+          <div className='flex flex-col flex-wrap bg-gray-700 bg-opacity-5 shadow-2xl translate -translate-y-6 lg:py-2 -mb-10 lg:w-2/4 lg:pl-8 lg:text-left text-left md:text-center'>
             <div className='flex flex-col mb-5 lg:items-start items-center'>
               <div className='flex-grow'>
-                <h2 className='relative capitalize font-extrabold text-gray-300 text-2xl title-font mb-1 w-full pr-4'>
+                <h2 className='relative capitalize text-left font-extrabold text-gray-300 text-2xl title-font mb-1 w-full pr-4'>
                   <span>How It All Began</span>
                 </h2>
-                <p className='alpha leading-relaxed text-sm w-9/12'>
+                <p className='alpha leading-relaxed text-sm text-left w-9/12'>
                   My inquisitive nature led me to pursue a degree in physics,
                   but it also opened a door to a world where wonder and
                   creativity would evolve and blend together with programming.
@@ -61,24 +61,26 @@ const About = () => {
             </div>
             <div className='flex flex-col mb-4 tart items-center'>
               <div className='flex-grow'>
-                <h2 className='relative apitalize font-extrabold text-gray-300 text-2xl title-font mb-1'>
-                  <span>Evolution</span>
+                <h2 className='relative capitalize text-left font-extrabold text-gray-300 text-2xl title-font mb-3'>
+                  <span>evolution</span>
                 </h2>
-                <p className='alpha leading-relaxed text-sm w-9/12 mb-5'>
+                <p className='alpha leading-relaxed text-sm w-9/12 text-left mb-5'>
                   When I am not coding, you will find me making meals with
                   friends, baking, kickboxing, doing yoga, reading, and hanging
                   out with my little family: husband, Ryan [add a link], and
                   tortie Siamese, Lenù. [Maybe a picture could go here?
                 </p>
-                <h2 className='relative capitalize font-extrabold text-gray-300 text-2xl  title-font mb-3'>
-                  <span>Turn it up</span>
+                <h2 className='relative capitalize text-left font-extrabold text-gray-300 text-2xl title-font mb-3'>
+                  <span>turn it up</span>
                 </h2>
-                <p className='alpha leading-relaxed text-sm w-9/12 text-white mb-3'>
+                <p className='alpha leading-relaxed text-sm w-9/12 text-left text-white mb-2'>
                   I also collect records and I'm a big music nerd. If you're
                   interested, this is what I've been listening to lately as well
                   as my current favorite playlist.
                 </p>
-                <Spotify />
+                <div className='grid px-4 md:px-8'>
+                  <Spotify />
+                </div>
               </div>
             </div>
           </div>
