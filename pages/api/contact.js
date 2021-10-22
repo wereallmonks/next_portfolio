@@ -14,16 +14,15 @@ export default async (req, res) => {
   });
 
   try {
-    // const emailRes = await transporter.sendMail({
-    //   from: email,
-    //   to: "claudandez@gmail.com",
-    //   subject: `Contact form submission from ${name}`,
-    //   html: `<p>You have a new contact form submission</p><br><p><strong>Name: </strong> ${name}</p>
-    //   <p><strong>Email: </strong> ${email}</p>
-    //   <p><strong>Message: </strong> ${message}</p>
-    //   `,
-    // });
-    console.log("Message Sent"); //, emailRes.messageId);
+    const emailRes = await transporter.sendMail({
+      from: email,
+      to: "claudandez@gmail.com",
+      subject: `Contact form submission from ${name}`,
+      html: `<p>You have a new contact form submission</p><br><p><strong>Name: </strong> ${name}</p>
+      <p><strong>Email: </strong> ${email}</p>
+      <p><strong>Message: </strong> ${message}</p>
+      `,
+    });
   } catch (err) {
     console.log(err);
   }

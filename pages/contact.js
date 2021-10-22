@@ -4,8 +4,10 @@ import Footer from "../components/Footer";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 import axios from "axios";
+import { useToast } from "../hooks/useToast";
 
 export default function ContactPage() {
+  const toast = useToast();
   const {
     register,
     handleSubmit,
@@ -28,7 +30,7 @@ export default function ContactPage() {
       const response = await axios(config);
       if (response.status === 200) {
         reset();
-        router.push("/");
+        toast("success", "Thank you for reaching out!");
       }
     } catch (err) {
       console.error(err);
