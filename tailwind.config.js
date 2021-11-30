@@ -10,6 +10,15 @@ module.exports = {
       margin: {
         "-22": "-5.5rem",
       },
+      colors: {
+        vienna: "var(--vienna-roast)",
+        spanish: "var(--spanish-purple)",
+        mushroom: "var(--mushroom-cream)",
+        redorpiment: "var(--red-orpiment)",
+      },
+      minWidth: {
+        "hero-min": "11.5rem",
+      },
     },
   },
   variants: {

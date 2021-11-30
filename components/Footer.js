@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer
       id='site-footer'
-      className='bg-gradient-to-r from-red-900 to-red-800 z-50 mt-1'
+      className='bg-gradient-to-b from-vienna to-spanish z-50 mt-1'
     >
       <div className='vzion-wrapper text-center mt-6 py-2 pt-16'>
         <div className='flex items-center -ink--light mx-auto'>

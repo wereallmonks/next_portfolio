@@ -51,63 +51,32 @@ export default function ContactPage() {
         ></link>
       </Head>
       <Nav />
-      <h1 className='page-title'>Contact Me</h1>
+      <div className='xl:max-w-xl xl:mx-auto'>
+        <h1 className='page-title'>Contact Me</h1>
+      </div>
       <section className='text-gray-900 bg-primary body-font sub--page mb-16'>
         <div className='container px-5 mx-auto flex flex-wrap'>
           <form
             onSubmit={handleSubmit(onSubmitForm)}
-            className='text-gray-300 my-14 p-10 max-w-xl mx-auto border-0  bg-black bg-opacity-20 shadow-2xl '
+            className='text-gray-300 -mt-4 p-10 mr-12 max-w-xl mx-auto border-0  bg-vienna bg-opacity-20 shadow-2xl transform lg:translate-y-2 lg:translate-x-2 '
           >
             <div className='form-message'></div>
             <input type='hidden' name='redirect' className='redirect' />
             <div className='mb-10'>
-              <h1 className='font-bold text-4xl mb-3 text-gray-300'>
-                Get in touch
-              </h1>
-              <p className='alpha font-medium text-lg mb-5'>
-                Send us a quick message and we'll get back to you shortly. Jerky
-                buffalo pastrami brisket prosciutto cow hamburger ham hock
-                turkey.
+              <p className='alpha font-medium text-base mb-5 w-9/12'>
+                I'm always interested in exploring new projects and ideas. Send
+                me a message and I'll get back to you shortly.
               </p>
               <hr className='border-gray-600' />
             </div>
-            <div className='mb-5'>
-              <label
-                htmlFor='message'
-                className='alpha text-lg flex justify-between items-end'
-              >
-                <span>Message</span>
-                <span className='text-xs text-red-700'>
-                  {errors?.message?.message}
-                </span>
-              </label>
-              <textarea
-                name='message'
-                {...register("message", {
-                  required: {
-                    value: true,
-                    message: "Please enter a message",
-                  },
-                  maxLength: {
-                    value: 1000,
-                    message: "Your message can't exceed 1000 characters",
-                  },
-                })}
-                id='message'
-                cols='30'
-                rows='10'
-                className={`shadow-md mt-1 block w-full sm:text-sm rounded-none border-gray-900 dark:border-gray-100 bg-gray-400 dark:bg-gray-900 ${
-                  errors.message ? "ring-4 ring-red-600" : null
-                }`}
-              ></textarea>
-            </div>
+
             <div className='mb-5'>
               <label
                 htmlFor='name'
                 className='alpha text-lg flex justify-between items-end'
               >
-                <span>Name</span>
-                <span className='text-xs text-red-700 '>
+                <span className='text-mushroom'>Name</span>
+                <span className='text-xs text-mushroom'>
                   {errors?.name?.message}
                 </span>
               </label>
@@ -129,7 +98,7 @@ export default function ContactPage() {
                   {...register("name", {
                     required: "required",
                   })}
-                  className='flex-1 block w-full sm:text-md rounded-none border border-gray-900 bg-gray-800'
+                  className='flex-1 block w-full sm:text-md rounded-none border border-mushroom bg-transparent border-b-2 border-t-0 border-r-0 border-l-0 alpha'
                 />
               </div>
             </div>
@@ -138,9 +107,9 @@ export default function ContactPage() {
                 htmlFor='email'
                 className='alpha text-lg flex justify-between items-end'
               >
-                <span>Email</span>
+                <span className='text-mushroom'>Email</span>
                 {errors.email && (
-                  <span className='text-xs text-red-700'>
+                  <span className='text-xs text-mushroom'>
                     {errors.email.message}
                   </span>
                 )}
@@ -167,14 +136,44 @@ export default function ContactPage() {
                     },
                   })}
                   name='email'
-                  className='flex-1 block w-full sm:text-md rounded-none border border-gray-900 bg-gray-800'
+                  className='flex-1 block w-full sm:text-md rounded-none border border-mushroom bg-transparent border-b-2 border-t-0 border-r-0 border-l-0 alpha'
                 />
               </div>
+            </div>
+            <div className='mb-5'>
+              <label
+                htmlFor='message'
+                className='alpha text-lg flex justify-between items-end'
+              >
+                <span className='text-mushroom'>Message</span>
+                <span className='text-xs text-mushroom'>
+                  {errors?.message?.message}
+                </span>
+              </label>
+              <textarea
+                name='message'
+                {...register("message", {
+                  required: {
+                    value: true,
+                    message: "Please enter a message",
+                  },
+                  maxLength: {
+                    value: 1000,
+                    message: "Your message can't exceed 1000 characters",
+                  },
+                })}
+                id='message'
+                cols='30'
+                rows='10'
+                className={`shadow-md mt-1 block w-full alpha sm:text-sm rounded-none border-gray-900 dark:border-gray-100 bg-gray-700 dark:bg-gray-900 ${
+                  errors.message ? "ring-4 ring-red-600" : null
+                }`}
+              ></textarea>
             </div>
             <div>
               <button
                 type='submit'
-                className='flex justify-center font-medium shadow-md rounded-none p-2 w-full focus:outline-none focus:ring-2 focus:ring-offset-2 border border-gray-900  bg-gray-800 text-gray-200 hover:bg-gray-900'
+                className='flex justify-center font-medium shadow-md rounded-none p-2 w-3/12 focus:outline-none focus:ring-2 focus:ring-offset-2 border border-gray-900  bg-gray-800 text-mushroom hover:bg-gray-900 mx-auto'
               >
                 {" "}
                 Send&nbsp;
@@ -183,7 +182,7 @@ export default function ContactPage() {
                   width='24'
                   height='24'
                   viewBox='0 0 24 24'
-                  className='fill-current text-gray-400'
+                  className='fill-current text-mushroom'
                 >
                   <path d='M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z' />
                 </svg>{" "}

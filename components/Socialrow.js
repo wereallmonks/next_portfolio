@@ -2,12 +2,12 @@ export default function Socialrow() {
   return (
     <aside
       aria-labelledby='cta'
-      className='bg-red-800 mx-auto pb-10 pt-10 text-center transform translate-y-16 w-4/5 shadow-xl'
+      className='bg-vienna mx-auto pb-10 pt-10 text-center transform translate-y-16 w-4/5 shadow-xl'
     >
       <div className='icon-footer-row ml-4 flex flex-nowrap justify-evenly'>
         <a href='/' className='vzion-icon-button' aria-label='Twitter'>
           <svg
-            className='fill-current text-gray-100'
+            className='fill-current text-mushroom'
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 26 28'
             aria-hidden='true'
@@ -18,7 +18,7 @@ export default function Socialrow() {
         </a>
         <a href='/' className='vzion-icon-button' aria-label='Github'>
           <svg
-            className='fill-current text-gray-100'
+            className='fill-current text-mushroom'
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 32 32'
             aria-hidden='true'
@@ -29,8 +29,7 @@ export default function Socialrow() {
         </a>
         <a href='/' className='vzion-icon-button' aria-label='CodePen'>
           <svg
-            className='fill-current text-gray-100
-                    '
+            className='fill-current text-mushroom'
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 32 32'
             aria-hidden='true'

@@ -60,7 +60,7 @@ const project = ({ project }) => {
                 VISIT
               </svg>
             </div>
-            <picture className='block sm:flex sm:items-center'>
+            <picture className='block sm:flex sm:items-center mt-12 md:mt-0'>
               <img
                 className='card-img-top'
                 src={project.image}
@@ -68,7 +68,7 @@ const project = ({ project }) => {
               />
             </picture>
           </div>
-          <div className='block btn justify-center md:flex my-4 py-4 w-full bg-gradient-to-r from-green-800 to-green-900 shadow-2xl transform translate-y-24'>
+          <div className='block btn justify-center text-center md:flex my-4 py-10 w-full bg-gradient-to-r bg-vienna shadow-2xl transform translate-y-24'>
             <Link href='/projects'>Back to Projects</Link>
           </div>
         </div>

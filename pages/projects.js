@@ -3,6 +3,7 @@ import Head from "next/head";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 const projects = ({ projects }) => {
   return (
@@ -19,15 +20,18 @@ const projects = ({ projects }) => {
         ></link>
       </Head>
       <Nav />
+      <div className='2xl:max-w-xl 2xl:mx-auto'>
+        <h1 className='page-title'>Projects</h1>
+      </div>
       <article className='container max-w-screen-xl mx-auto'>
         <div className='proj block sm:grid sm:grid-cols-2 ml-6 mr-24 md:mr-12 my-6'>
           <div className='h-auto rounded-md block md:flex flex-col justify-center my-16 sm:my-0 relative'>
             <figure className='h-auto'>
-              <img
-                src='https://images.unsplash.com/photo-1603285990954-183e50a874b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNzg2MDgzNg&ixlib=rb-1.2.1&q=80&w=400'
+              <Image
+                src={projects[0].image}
                 width={400}
                 height={266}
-                alt=''
+                alt='Valencia Vikings'
               />
             </figure>
             <p className='proj--number text-6xl text-white font-thin absolute -top-2 -left-6'>
@@ -43,11 +47,11 @@ const projects = ({ projects }) => {
               <p className='text-sm text-white px-8 py-4 leading-6'>
                 {projects[0].description}
               </p>
-              <button className='w-1/4 self-end p-4 btn-alt1 transform translate-x-2 translate-y-2 shadow-2xl'>
+              <button className='w-1/4 self-end p-4 btn-alt3 transform translate-x-2 translate-y-2 shadow-2xl'>
                 <span className='sr-only'></span>
                 <Link href='/project/1'>
                   <svg
-                    className='fill-current text-white hover:text-black h-5 w-8 mx-auto'
+                    className='fill-current text-white transform h-5 w-5 mr-auto ml-auto'
                     xmlns='http://www.w3.org/2000/svg'
                     fillRule='evenodd'
                     clipRule='evenodd'
@@ -60,11 +64,11 @@ const projects = ({ projects }) => {
           </div>
           <div className='h-auto rounded-md block md:flex flex-col justify-center my-6 sm:my-0 relative'>
             <figure className='h-auto'>
-              <img
-                src='https://images.unsplash.com/photo-1530288782965-fbad40327074?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNzgwNDE4OQ&ixlib=rb-1.2.1&q=80&w=400'
+              <Image
+                src={projects[1].image}
                 width={400}
                 height={266}
-                alt=''
+                alt='Ruby Palindrome Detector'
               />
             </figure>
             <p className='proj--number text-6xl text-white font-thin absolute top-6 -left-4'>
@@ -80,11 +84,11 @@ const projects = ({ projects }) => {
               <p className='text-sm text-white px-8 my-4 leading-6 min-h-0 h-24 overflow-hidden'>
                 {projects[1].description}
               </p>
-              <button className='w-1/4 flex self-end p-4 btn-alt2 transform translate-x-2 translate-y-2 shadow-2xl'>
+              <button className='w-1/4 flex self-end p-4 btn-alt3 transform translate-x-2 translate-y-2 shadow-2xl'>
                 <span className='sr-only'></span>
                 <Link href='/project/2'>
                   <svg
-                    className='fill-current text-white hover:text-black h-5 w-8 mx-auto'
+                    className='fill-current text-white h-5 w-5 mr-auto ml-auto'
                     xmlns='http://www.w3.org/2000/svg'
                     fillRule='evenodd'
                     clipRule='evenodd'
@@ -95,13 +99,13 @@ const projects = ({ projects }) => {
               </button>
             </div>
           </div>
-          <div className='block sm:ml-24 sm:col-span-2 h-full sm:h-64 rounded-md md:flex sm:flex-row items-center self-center align-center mx-auto my-0 md:my-6 relative'>
+          <div className='block sm:ml-24 sm:col-span-2 h-full sm:h-64 rounded-md md:flex sm:flex-row items-center self-center align-center mx-auto my-0 md:my-9 relative'>
             <figure className='h-5/6'>
-              <img
-                src='https://images.unsplash.com/photo-1626624338641-b99e0d32c958?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNzgwNDI1Mw&ixlib=rb-1.2.1&q=85'
+              <Image
+                src={projects[2].image}
                 width={400}
                 height={266}
-                alt=''
+                alt='React Piano'
               />
             </figure>
             <p className='proj--number text-6xl text-white font-thin absolute sm:bottom-0 sm:left-6 top-2 -left-4'>
@@ -111,7 +115,7 @@ const projects = ({ projects }) => {
               className='project-wrapper relative h-auto flex flex-col sm:w-96 md:w-6/12 w-4/5 ml-auto -mt-14 sm:-ml-16 sm:mt-4 bg-white shadow-lg bg-clip-padding bg-opacity-20 border border-none'
               style={{ backdropFilter: "blur(20px)" }}
             >
-              <h2 className='text-4xl text-white font-extrabold px-8 pt-6 border-left border-red-600'>
+              <h2 className='text-4xl text-white font-extrabold px-8 pt-6 border-left '>
                 {projects[2].title}
               </h2>
               <p className='text-sm text-white px-8 pb-8 pt-4 leading-6'>
@@ -123,7 +127,7 @@ const projects = ({ projects }) => {
                 <span className='sr-only'></span>
                 <Link href='/project/3'>
                   <svg
-                    className='fill-current text-black hover:text-gray-400 h-5 w-8 mx-auto'
+                    className='fill-current text-white h-5 w-5 mr-auto ml-auto'
                     xmlns='http://www.w3.org/2000/svg'
                     fillRule='evenodd'
                     clipRule='evenodd'
@@ -136,11 +140,11 @@ const projects = ({ projects }) => {
           </div>
           <div className='h-auto rounded-md block sm:flex flex-col justify-center sm:ml-2 mt-2 mb-4 sm:my-4 my-0 relative'>
             <figure className='h-full'>
-              <img
-                src='https://images.unsplash.com/photo-1594125593671-3042f6a04f6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNzgwNDM0Nw&ixlib=rb-1.2.1&q=80&w=400'
+              <Image
+                src={projects[3].image}
                 width={400}
                 height={266}
-                alt=''
+                alt='Weather App'
               />
             </figure>
             <p className='proj--number text-6xl text-white font-thin absolute top-2 -left-4'>
@@ -158,11 +162,11 @@ const projects = ({ projects }) => {
                 malesuada fames ac turpis egestas. Nullam accumsan lorem in dui.
                 Praesent adipiscing. Vestibulum volutpat pretium libero.
               </p>
-              <button className='w-1/4 self-end p-4 btn-4 bg-red-900 transform translate-x-2 translate-y-2 shadow-2xl'>
+              <button className='w-1/4 self-end p-4 btn-alt3 bg-spanish transform translate-x-2 translate-y-2 shadow-2xl'>
                 <span className='sr-only'></span>
                 <Link href='/project/4'>
                   <svg
-                    className='fill-current text-white hover:text-black h-5 w-8 mx-auto'
+                    className='fill-current text-white h-5 w-5 mr-auto ml-auto'
                     xmlns='http://www.w3.org/2000/svg'
                     fillRule='evenodd'
                     clipRule='evenodd'

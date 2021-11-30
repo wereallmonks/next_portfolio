@@ -19,35 +19,25 @@ const About = () => {
         ></link>
       </Head>
       <Nav />
-      <h1 className='page-title'>About Me</h1>
+      <div className='2xl:max-w-xl 2xl:mx-auto'>
+        <h1 className='page-title'>About Me</h1>
+      </div>
       <section className='text-gray-400 bg-primary body-font sub--page mb-16'>
-        <div className='container px-5 mx-auto flex flex-wrap'>
-          <div className='lg:w-2/5 w-full mb-10 lg:mb-0 rounded-none overflow-hidden'>
-            <img
-              alt='feature'
-              className='img-responsive'
-              src='https://placekitten.com/g/600/500'
-            />
-            <aside className='spotify-bg py-12'>
-              <div className='py-10 mx-auto w-3/4'>
-                <iframe
-                  height='380'
-                  loading='lazy'
-                  src='https://open.spotify.com/embed/playlist/5kgVJPGaIt79ZLsVuj82WW'
-                  title='Clo in Quarantine IV'
-                  width='300'
-                  className='flex justify-center mx-auto rounded-b-lg border-4 border-yellow-500 border-opacity-70'
-                ></iframe>
-              </div>
-            </aside>
+        <div
+          // style={{ maxHeight: "1600px" }}
+          className='container masonry-2col pr-20 lg:pr-16'
+        >
+          <div className='masonry-1 lg:overflow-hidden relative h-96 transform -translate-y-1 mb-10 lg:mb-0 rounded-none '>
+            <img alt='feature' className='img-responsive' src='/me.jpg' />
           </div>
-          <div className='flex flex-col flex-wrap bg-gray-700 bg-opacity-5 shadow-2xl translate -translate-y-6 lg:py-2 -mb-10 lg:w-2/4 lg:pl-8 lg:text-left text-left md:text-center'>
+
+          <div className='masonry-2 relative bg-vienna bg-opacity-5 shadow-2xl translate -translate-y-6 px-4 lg:py-2 -mb-10 lg:pl-8 lg:text-left text-left md:text-center'>
             <div className='flex flex-col mb-5 lg:items-start items-center'>
               <div className='flex-grow'>
-                <h2 className='relative capitalize text-left font-extrabold text-gray-300 text-2xl title-font mb-1 w-full pr-4'>
-                  <span>How It All Began</span>
+                <h2 className='relative capitalize text-left font-extrabold text-mushroom text-2xl title-font mb-1 mt-8 md:mt-1 w-full pr-4'>
+                  <span>Beginnings</span>
                 </h2>
-                <p className='alpha leading-relaxed text-sm text-left w-9/12'>
+                <p className='alpha leading-relaxed text-sm text-left w-11/12'>
                   My inquisitive nature led me to pursue a degree in physics,
                   but it also opened a door to a world where wonder and
                   creativity would evolve and blend together with programming.
@@ -59,31 +49,65 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className='flex flex-col mb-4 tart items-center'>
+            <div className=' flex flex-col mb-4 tart items-center'>
               <div className='flex-grow'>
-                <h2 className='relative capitalize text-left font-extrabold text-gray-300 text-2xl title-font mb-3'>
+                <h2 className='relative capitalize text-left font-extrabold text-mushroom text-2xl title-font mb-3'>
                   <span>evolution</span>
                 </h2>
-                <p className='alpha leading-relaxed text-sm w-9/12 text-left mb-5'>
+                <p className='alpha leading-relaxed text-sm w-11/12 text-left mb-5'>
                   When I am not coding, you will find me making meals with
                   friends, baking, kickboxing, doing yoga, reading, and hanging
-                  out with my little family: husband, Ryan [add a link], and
-                  tortie Siamese, Lenù. [Maybe a picture could go here?
+                  out with my little family: husband, Ryan and tortie Siamese,
+                  Lenù.
                 </p>
-                <h2 className='relative capitalize text-left font-extrabold text-gray-300 text-2xl title-font mb-3'>
+                <h2 className='relative capitalize text-left font-extrabold text-mushroom text-2xl title-font mb-3'>
                   <span>turn it up</span>
                 </h2>
-                <p className='alpha leading-relaxed text-sm w-9/12 text-left text-white mb-2'>
-                  I also collect records and I'm a big music nerd. If you're
-                  interested, this is what I've been listening to lately as well
-                  as my current favorite playlist.
+                <p className='alpha leading-relaxed text-sm w-11/12 text-left text-white mb-2'>
+                  I've collected vinyl records since I was a kid and continue to
+                  explore new sounds. If you're interested, this is what I've
+                  been listening to lately as well as my current favorite
+                  playlist.
                 </p>
-                <div className='grid px-4 md:px-8'>
+                <div className='grid px-4 sm:px-1'>
                   <Spotify />
                 </div>
               </div>
             </div>
           </div>
+          <aside
+            style={{ maxHeight: "595px" }}
+            className='masonry-3 relative spotify-bg mt-12 mx-8 md:mx-14'
+          >
+            <p
+              style={{ backgroundColor: "#131415" }}
+              className='alpha flex flex-nowrap justify-center mt-0 text-xl font-normal text-redorpiment py-4 items-baseline'
+            >
+              <span className='bg-transparent w-4 h-4 ml-2 mr-2 rounded-full items-center justify-center '>
+                <svg
+                  fill='none'
+                  stroke='currentColor'
+                  className='text-redorpiment opacity-70 w-8 h-8 flex-shrink-0 mr-2'
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill-rule='evenodd'
+                  clip-rule='evenodd'
+                >
+                  <path d='M22 13c-.027-5.497-4.497-10-10-10s-9.973 4.503-10 10h2.5c.828 0 1.5.672 1.5 1.5v7c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-8.5c.027-6.601 5.394-12 12-12s11.973 5.399 12 12v8.5c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-7c0-.828.672-1.5 1.5-1.5h2.5z' />
+                </svg>
+              </span>
+              Playlist of the Week
+            </p>
+            <div className='py-10 mx-auto w-full'>
+              <iframe
+                height='380'
+                loading='lazy'
+                src='https://open.spotify.com/embed/playlist/5kgVJPGaIt79ZLsVuj82WW'
+                title='Clo in Quarantine IV'
+                width='300'
+                className='flex justify-center mx-auto rounded-b-lg border-4 border-vienna border-opacity-70'
+              ></iframe>
+            </div>
+          </aside>
         </div>
       </section>
       <Footer />
