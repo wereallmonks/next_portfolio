@@ -99,9 +99,7 @@ export default function Nav() {
           </div>
           <SocialM />
           <div className='flex relative'>
-            <div className='flex-shrink-0 rounded-full prim-background inline-flex items-center justify-center text-white relative z-10'>
-              <Twitter />
-            </div>
+            <div className='flex-shrink-0 rounded-full prim-background inline-flex items-center justify-center text-white relative z-10'></div>
           </div>
         </div>
       </div>

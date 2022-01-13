@@ -12,7 +12,7 @@ const FpProject = ({ title, description }) => {
           <p className='text-base leading-relaxed w-1/2 xl:w-2/4 lg:w-2/4 mx-auto'>
             I am currently working on a freelance project creating a responsive
             site using GatsbyJS, GraphQL, and incorporating Wordpress as the
-            back-end. However, below is my latest completed project.
+            back-end.
           </p>
         </div>
         <div className='proj block sm:grid sm:grid-cols-2 ml-6 mr-16 md:mr-16 my-6'>

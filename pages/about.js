@@ -39,7 +39,7 @@ const About = () => {
                 </h2>
                 <p className='alpha leading-relaxed text-sm text-left w-11/12'>
                   My inquisitive nature led me to pursue a degree in physics,
-                  but it also opened a door to a world where wonder and
+                  and it also opened a door to a world where wonder and
                   creativity would evolve and blend together with programming.
                   In college I learned the basics of writing programs with tools
                   such as Fortran and C++, and afterwards I continued learning
@@ -64,10 +64,10 @@ const About = () => {
                   <span>turn it up</span>
                 </h2>
                 <p className='alpha leading-relaxed text-sm w-11/12 text-left text-white mb-2'>
-                  I've collected vinyl records since I was a kid and continue to
-                  explore new sounds. If you're interested, this is what I've
-                  been listening to lately as well as my current favorite
-                  playlist.
+                  I've collected vinyl records since I was a teen and music is
+                  always in the background, whether I'm coding or cooking. If
+                  you're interested, this is what I've been listening to lately
+                  as well as my current favorite playlist.
                 </p>
                 <div className='grid px-4 sm:px-1'>
                   <Spotify />

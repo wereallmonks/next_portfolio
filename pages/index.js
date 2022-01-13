@@ -32,7 +32,7 @@ export default function Home({ projects }) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/projects/4`);
+  const res = await fetch(`${server}/api/projects/5`);
   const projects = await res.json();
 
   return {

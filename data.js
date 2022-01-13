@@ -45,4 +45,16 @@ export const projects = [
     image:
       "https://res.cloudinary.com/dsfa5pvfb/image/upload/v1629138950/Screen_Shot_2021-08-16_at_11.34.52_AM_eudj9y.png",
   },
+  {
+    id: "5",
+    title: "Thriving Life",
+    description:
+      "A website which uses Wordpress as the backend CMS and Gatsby for front end.",
+    summary:
+      "In this project, Tailwind CSS was used for stylizing the pages within Gatsby. The data used to populate the properties of the content types formulated in Strapi, not only had to render in the pages, but also depending on the content type, had to programmatically create pages from that data. This was achieved by creating a gatsby-node.js file and utilizing the slug generated in Strapi to create pages in Gatsby. Additionally, the Cloudinary API was for the media in Strapi.",
+    projectUrl: "https://github.com/wereallmonks/thriving_life",
+    stack: ["Gatsby.js", "React", "Wordpress", "Tailwind CSS"],
+    image:
+      "https://res.cloudinary.com/dsfa5pvfb/image/upload/v1629138950/Screen_Shot_2021-08-16_at_11.34.52_AM_eudj9y.png",
+  },
 ];
