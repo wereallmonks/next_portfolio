@@ -6,7 +6,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 const projects = ({ projects }) => {
-  console.log(projects);
   return (
     <>
       <Head>
@@ -25,10 +24,13 @@ const projects = ({ projects }) => {
         <h1 className='page-title'>Projects</h1>
       </div>
       <article className='container max-w-screen-xl mx-auto'>
-        <div className='proj block sm:grid sm:grid-cols-2 ml-6 mr-24 md:mr-12 my-6'>
+        <div className='proj block sm:grid sm:grid-cols-2 ml-6 mr-24 md:mr-12 mt-2 mb-6 '>
           {projects.map((item) => {
             return (
-              <div className='h-auto rounded-md block md:flex flex-col justify-center my-16 sm:my-0 relative'>
+              <div
+                key={item.id}
+                className='h-auto rounded-md block md:flex flex-col justify-center my-16 relative'
+              >
                 <figure className='h-auto'>
                   <Image
                     src={item.image}
@@ -37,7 +39,7 @@ const projects = ({ projects }) => {
                     alt={item.title}
                   />
                 </figure>
-                <p className='proj--number text-6xl text-white font-thin absolute -top-2 -left-6'>
+                <p className='proj--number text-4xl text-white font-thin absolute -top-2 -left-10'>
                   0{item.id}
                 </p>
                 <div
@@ -50,11 +52,11 @@ const projects = ({ projects }) => {
                   <p className='text-sm text-white px-8 py-4 leading-6'>
                     {item.description}
                   </p>
-                  <button className='w-1/4 self-end p-4 btn-alt3 transform translate-x-2 translate-y-2 shadow-2xl'>
+                  <button className='w-1/4 self-end p-4 btn-alt3 transition-all shadow-2xl'>
                     <span className='sr-only'></span>
-                    <Link href={`/project/${item.id + 1}`}>
+                    <Link href={`/project/${item.id}`}>
                       <svg
-                        className='fill-current text-white transform h-5 w-5 mr-auto ml-auto'
+                        className='fill-current text-white h-5 w-5 mr-auto ml-auto'
                         xmlns='http://www.w3.org/2000/svg'
                         fillRule='evenodd'
                         clipRule='evenodd'

@@ -28,10 +28,12 @@ const project = ({ project }) => {
           <p className='alpha leading-relaxed text-sm w-11/12 lg:w-9/12 '>
             {project.summary}
           </p>
-          <div className='flex flex-wrap sm:flex-nowrap w-full justify-between mr-12 my-8 black bg-opacity-40'>
+          <div className='flex flex-wrap sm:flex-nowrap w-full justify-between mr-12 my-8 black bg-opacity-40 bg-black'>
             <div className='w-60 sm:w-3/4 xl:w-72'>
-              <div className='flex divide-x-8 divide-green-900 bg-gray-600 bg-opacity-5 shadow-2xl px-4 py-4'>
-                <h3 className='project-vert cursor-text'>Stack</h3>
+              <div className='flex divide-x-4 divide-green-900 px-4 py-4'>
+                <h3 className='project-vert cursor-text font-semibold'>
+                  Stack
+                </h3>
                 <ul className='pl-4 flex flex-col items-left justify-start my-1'>
                   {project.stack.map((item, i) => {
                     return (
@@ -50,15 +52,16 @@ const project = ({ project }) => {
               <Link href={project.projectUrl} alt={project.title}>
                 Visit
               </Link>
-              <svg
-                className='fill-current text-white hover:text-opacity-50 h-5 w-8 mx-auto pl-2 lg:pl-2 transform lg:translate-y-1 animate-pulse'
-                xmlns='http://www.w3.org/2000/svg'
-                fillRule='evenodd'
-                clipRule='evenodd'
-              >
-                <path d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z' />
-                VISIT
-              </svg>
+              <Link href={project.projectUrl} alt={project.title}>
+                <svg
+                  className='fill-current text-white hover:text-opacity-50 h-5 w-8 mx-auto pl-2 lg:pl-2 transform lg:translate-y-1 animate-pulse'
+                  xmlns='http://www.w3.org/2000/svg'
+                  fillRule='evenodd'
+                  clipRule='evenodd'
+                >
+                  <path d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z' />
+                </svg>
+              </Link>
             </div>
             <picture className='block sm:flex sm:items-center mt-12 md:mt-0'>
               <img

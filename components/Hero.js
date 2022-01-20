@@ -3,14 +3,15 @@ export default function Hero() {
     <div className='min-h-40vh pb-20 sm:pb-0 text-left '>
       <div className='grid grid-cols-3 md:grid-flow-col mr-12 -mt-32 md:-mt-22 md:mr-0 sm:gap-0'>
         <div className='col-span-2 solid-sq gradient--bg px-1 sm:px-4 sm:py-10'>
-          <div className='grid justify-end relative text-wrap transform translate-x-1 md:translate-x-1/4 translate-y-32 z-50 pt-6 sm:pt-0'>
+          <div className='grid justify-end relative text-wrap transform translate-x-1 md:translate-x-1/4 lg:translate-x-1/3 translate-y-32 z-50 pt-6 sm:pt-0'>
             <h1 className='text-4xl md:text-6xl text-left text-mushroom'>
-              I love building
-              <br /> a better web
+              Writing my
+              <br />
+              ideas in code.
             </h1>
-            <p className='text-mushroom no-margin text-lg md:text-xl text-left w-11/12 md:w-7/12'>
+            <p className='text-mushroom no-margin text-lg md:text-xl text-left w-11/12 md:w-7/12 xl:w-6/12'>
               My name is Claudia Marie Vizena and I specialize in developing
-              websites and applications
+              websites and apps with Javascript
               <svg
                 className='inline-flex visible fill-current animate-bounce transform text-white hover:text-white h-9 w-8 mx-auto pt-2 pl-10'
                 xmlns='http://www.w3.org/2000/svg'

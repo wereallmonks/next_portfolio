@@ -10,11 +10,10 @@ export default function About() {
             Experience
           </h1>
           <p className='text-base leading-relaxed w-1/2 xl:w-2/4 lg:w-2/4 mx-auto'>
-            I have been using JavaScript for most of my development, which led
-            me to learn React based framewords such as Gatsby and Next for
-            building UI. My love of web development has allowed me to work on
-            projects for clients using the aforementioned frameworks as well
-            building their CMS using Strapi and Wordpress.
+            I have been working on accessible, well-built projects using code
+            with posterity in mind. This has opened opportunities to help
+            develop solutions for clients that share my enthusiam for robust
+            websites.
           </p>
         </div>
         <div className='flex flex-col sm:flex-row sm:flex-nowrap -m-4 justify-center'>
@@ -22,7 +21,7 @@ export default function About() {
             <h2 className='title-font tracking-wide text-white mb-4 text-xl font-extrabold text-center sm:text-left uppercase'>
               Current Stack
             </h2>
-            <div className='flex flex-col items-start sm:text-left text-center -mb-1 space-y-1 md:space-y-2'>
+            <div className='flex flex-col items-start sm:text-left text-center -mb-1 space-y-1 md:space-y-2 md:pl-4'>
               <a className='alpha flex flex-nowrap text-base text-redorpiment py-2 pl-10 sm:pl-10 lg:pl-2'>
                 <span className='bg-transparent w-4 h-6 mr-2 rounded-full inline-flex items-center justify-center '>
                   <svg
@@ -31,7 +30,7 @@ export default function About() {
                     strokeLinecap='round'
                     strokeLinejoin='round'
                     strokeWidth='3'
-                    className='text-spanish opacity-50 w-6 h-6 flex-shrink-0 mr-4'
+                    className='text-spanish opacity-70 w-6 h-6 flex-shrink-0 mr-4'
                     viewBox='0 0 24 24'
                   >
                     <path d='M22 11.08V12a10 10 0 11-5.93-9.14'></path>
@@ -55,7 +54,7 @@ export default function About() {
                     <path d='M22 4L12 14.01l-3-3'></path>
                   </svg>
                 </span>
-                GatsbyJS
+                Gatsby
               </a>
               <a className='alpha flex flex-nowrap py-2 pl-10 sm:pl-10 lg:pl-2 text-base text-redorpiment'>
                 <span className='bg-transparent w-4 h-6 mr-2 rounded-full inline-flex items-center justify-center'>
@@ -65,14 +64,14 @@ export default function About() {
                     strokeLinecap='round'
                     strokeLinejoin='round'
                     strokeWidth='3'
-                    className='text-spanish opacity-90 w-6 h-6 flex-shrink-0 mr-4'
+                    className='text-spanish opacity-70 w-6 h-6 flex-shrink-0 mr-4'
                     viewBox='0 0 24 24'
                   >
                     <path d='M22 11.08V12a10 10 0 11-5.93-9.14'></path>
                     <path d='M22 4L12 14.01l-3-3'></path>
                   </svg>
                 </span>
-                Wordpress (CMS)
+                Node.js
               </a>
               <a className='alpha flex flex-nowrap text-base text-redorpiment py-2 pl-10 sm:pl-10 lg:pl-2'>
                 <span className='bg-transparent w-4 h-6 mr-2 rounded-full inline-flex items-center justify-center'>
@@ -82,14 +81,14 @@ export default function About() {
                     strokeLinecap='round'
                     strokeLinejoin='round'
                     strokeWidth='3'
-                    className='text-spanish w-6 h-6 flex-shrink-0 mr-4'
+                    className='text-spanish opacity-70 w-6 h-6 flex-shrink-0 mr-4'
                     viewBox='0 0 24 24'
                   >
                     <path d='M22 11.08V12a10 10 0 11-5.93-9.14'></path>
                     <path d='M22 4L12 14.01l-3-3'></path>
                   </svg>
                 </span>
-                TailwindCSS
+                GraphQL
               </a>
             </div>
           </div>
@@ -98,43 +97,30 @@ export default function About() {
             <h2 className='title-font tracking-wide text-white mb-4 text-xl font-extrabold text-center sm:text-left uppercase'>
               Skills
             </h2>
-            <nav className='flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2'>
-              <a className='flex flex-col w-4/5 py-1 alpha'>
-                <div className='h-1 bg-gray-700 mb-1.5 opacity-80 rounded overflow-hidden'>
-                  <div className='w-2/4 h-full bg-mushroom opacity-80'></div>
-                </div>
-                HTML
-              </a>
-              <a className='flex flex-col w-4/5 py-1 alpha'>
-                <div className='h-1 bg-gray-700 mb-1.5 opacity-80 rounded overflow-hidden'>
-                  <div className='w-3/4 h-full bg-spanish'></div>
-                </div>
-                CSS
-              </a>
-              <a className='flex flex-col w-4/5 py-1 alpha'>
-                <div className='h-1 bg-redorpiment mb-1.5 opacity-80 rounded overflow-hidden'>
-                  <div className='w-2/4 h-full prim-bg-red'></div>
-                </div>
-                Javascript
-              </a>
-              <a className='flex flex-col w-4/5 py-1 alpha'>
-                <div className='h-1 bg-spanish mb-1.5 opacity-80 rounded overflow-hidden'>
-                  <div className='w-4/4 h-full prim-bg-green'></div>
-                </div>
-                Git
-              </a>
-              <a className='flex flex-col w-4/5 py-1 alpha'>
-                <div className='h-1 bg-mushroom mb-1.5 rounded overflow-hidden'>
-                  <div className='w-2/4 h-full prim-bg-blue'></div>
-                </div>
-                React
-              </a>
-            </nav>
+            <div className='flex justify-start'>
+              <ul className='bg-black bg-opacity-40 rounded-lg w-96 text-mushroom leading-6 px-4 pt-1 pb-2'>
+                <li className='text-sm alpha px-4 py-2 border-b border-yellow-500 border-opacity-30 w-full rounded-t-lg'>
+                  Progressive Web Apps (PWA)
+                </li>
+                <li className='text-sm alpha px-4 py-2 border-b border-yellow-500 border-opacity-30 w-full'>
+                  Headless CMS w/ GraphQL
+                </li>
+                <li className='text-sm alpha px-4 py-2 border-b border-yellow-500 border-opacity-30  w-full'>
+                  HTML / CSS Frameworks
+                </li>
+                <li className='text-sm alpha px-4 py-2 border-b border-yellow-500 border-opacity-30 w-full'>
+                  API generation
+                </li>
+                <li className='text-sm alpha px-4 py-2 w-full rounded-b-lg'>
+                  Cross-browser support
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <button
           href='/about'
-          className='flex flex-nowrap justify-center mx-auto mt-16 text-vienna bg-mushroom border-0 py-2 px-8 focus:outline-none hover:bg-spanish hover:text-mushroom rounded text-lg'
+          className='flex flex-nowrap transition-all justify-center mx-auto mt-16 hover:text-vienna hover:bg-mushroom border-0 py-2 px-8 focus:outline-none bg-spanish text-mushroom rounded text-lg'
         >
           <Link href='/about'>
             <a>Wait there's more </a>
@@ -155,3 +141,8 @@ export default function About() {
     </section>
   );
 }
+
+// My love of
+// web development has allowed me to work on projects for clients using
+// the aforementioned frameworks as well building their CMS using
+// Strapi and Wordpress.

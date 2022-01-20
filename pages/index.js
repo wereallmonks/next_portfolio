@@ -24,7 +24,11 @@ export default function Home({ projects }) {
       <Nav />
       <Hero />
       <About />
-      <FpProject title={projects.title} description={projects.description} />
+      <FpProject
+        title={projects.title}
+        description={projects.description}
+        image={projects.image}
+      />
       <Socialrow />
       <Footer />
     </>

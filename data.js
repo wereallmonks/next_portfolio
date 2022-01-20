@@ -3,13 +3,13 @@ export const projects = [
     id: "1",
     title: "Valencia Volleyball",
     description:
-      "A website built utilizing Gatsby frontend with Strapi as the headless CMS",
+      "A website built utilizing Gatsby frontend with Strapi as the source for the headless CMS",
     summary:
-      "In this project, Tailwind CSS was used for stylizing the pages within Gatsby. The data used to populate the properties of the content types formulated in Strapi, not only had to render in the pages, but also depending on the content type, had to programmatically create pages from that data. This was achieved by creating a gatsby-node.js file and utilizing the slug generated in Strapi to create pages in Gatsby. Additionally, the Cloudinary API was for the media in Strapi.",
+      "For this High School Voleyball wesbite, the data used to populate the properties of the content types formulated in Strapi, not only to render in the pages, but also depending on the content type, had to programmatically create pages from the provided data fields. This was achieved by creating a gatsby-node.js file and utilizing the slug generated in Strapi to create pages in Gatsby. Additionally, the Cloudinary API was installed to handle all median assets uploaded by the client in Strapi. The utility framework TaildwindCSS was used for the styling within Gatsby.",
     projectUrl: "https://www.valenciavolleyball.com/",
     stack: ["Gatsby.js", "React", "Strapi CMS", "Tailwind CSS"],
     image:
-      "https://res.cloudinary.com/dsfa5pvfb/image/upload/v1638310832/valenciaVikings.png",
+      "https://res.cloudinary.com/dsfa5pvfb/image/upload/v1642549298/screely-vikings-screenshot1_tuwtsj.png",
   },
   {
     id: "2",
@@ -20,7 +20,7 @@ export const projects = [
     projectUrl: "https://morning-depths-84327.herokuapp.com/",
     stack: ["Ruby", "Sinatra"],
     image:
-      "https://res.cloudinary.com/dsfa5pvfb/image/upload/v1629138943/Screen_Shot_2021-08-16_at_11.24.52_AM_a7gn6n.png",
+      "https://res.cloudinary.com/dsfa5pvfb/image/upload/v1642550674/screely-palindrome_wa4du0.png",
   },
   {
     id: "3",
@@ -31,7 +31,7 @@ export const projects = [
     projectUrl: "https://github.com/wereallmonks/react-piano",
     stack: ["React"],
     image:
-      "https://res.cloudinary.com/dsfa5pvfb/image/upload/v1629138942/Screen_Shot_2021-08-16_at_11.27.55_AM_pgpi5q.png",
+      "https://res.cloudinary.com/dsfa5pvfb/image/upload/v1642550881/screely-react-piano_vfnk4j.png",
   },
   {
     id: "4",
@@ -47,14 +47,14 @@ export const projects = [
   },
   {
     id: "5",
-    title: "Thriving Life",
+    title: "This Thriving Life",
     description:
-      "A website which uses Wordpress as the backend CMS and Gatsby for front end.",
+      "Lifestyle blog which uses a decoupled custom Wordpress build as the backend CMS and Gatsby for front end.",
     summary:
-      "In this project, Tailwind CSS was used for stylizing the pages within Gatsby. The data used to populate the properties of the content types formulated in Strapi, not only had to render in the pages, but also depending on the content type, had to programmatically create pages from that data. This was achieved by creating a gatsby-node.js file and utilizing the slug generated in Strapi to create pages in Gatsby. Additionally, the Cloudinary API was for the media in Strapi.",
+      "This Thriving Life is a lifestyle blog built with a decoupled CMS using Wordpress and Gatsby. Extensive use of GraphQL as well as Algolia for search and Disqus for comments have been added to the build. The site is styled with TailwindCSS and uses React carousel and reveal plugins for better UX.",
     projectUrl: "https://github.com/wereallmonks/thriving_life",
-    stack: ["Gatsby.js", "React", "Wordpress", "Tailwind CSS"],
+    stack: ["Gatsby.js", "React", "Wordpress", "TailwindCSS"],
     image:
-      "https://res.cloudinary.com/dsfa5pvfb/image/upload/v1629138950/Screen_Shot_2021-08-16_at_11.34.52_AM_eudj9y.png",
+      "https://res.cloudinary.com/dsfa5pvfb/image/upload/v1642637028/screely-tl_ngej4u.png",
   },
 ];

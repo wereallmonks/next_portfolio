@@ -68,7 +68,7 @@ export default function Nav() {
             </li>
             <li role='none'>
               <a
-                className='inline-flex sm:items-center bg-gray-800  py-2 px-3 text-bold hover:bg-gray-700 border-2 border-transparent hover:border-2 rounded text-xs font-thin mt-0'
+                className='contact-btn inline-flex sm:items-center bg-gray-800 py-2 px-3 text-bold hover:bg-gray-700 border-2 border-transparent hover:border-2 rounded text-xs font-thin mt-0 transition-all'
                 href='/contact'
                 role='menuitem'
                 aria-haspopup='true'
@@ -92,9 +92,9 @@ export default function Nav() {
           </ul>
         </nav>
         <div className='fixed right-0 top-20 md:top-8 mr-2 md:mr-2 pb-20 z-0 social-side self-end ml-10 social-side transform translate-y-10'>
-          <div className='flex relative pb-12 md:pb-40'>
+          <div className='flex relative pb-12 md:pb-12'>
             <div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
-              <div className='h-full w-1 bg-gray-800 pointer-events-none'></div>
+              <div className='h-full w-1 bg-[#ebd2bc]  pointer-events-none'></div>
             </div>
           </div>
           <SocialM />

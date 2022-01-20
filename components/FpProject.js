@@ -1,7 +1,7 @@
-import { server } from "../config";
 import Link from "next/link";
+import Image from "next/image";
 
-const FpProject = ({ title, description }) => {
+const FpProject = ({ title, description, image }) => {
   return (
     <>
       <article className='container max-w-screen-xl mx-auto'>
@@ -17,16 +17,17 @@ const FpProject = ({ title, description }) => {
         </div>
         <div className='proj block sm:grid sm:grid-cols-2 ml-6 mr-16 md:mr-16 my-6'>
           <div className='block sm:ml-24 sm:col-span-2 h-full sm:h-64 rounded-md md:flex sm:flex-row items-center self-center align-center mx-auto my-0 md:my-6 relative'>
-            <figure className='h-5/6'>
-              <img
-                src='https://images.unsplash.com/photo-1603285990954-183e50a874b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNzg2MDgzNg&ixlib=rb-1.2.1&q=80&w=400'
+            <figure className='h-5/6 '>
+              <Image
+                className='object-cover'
+                src={`${image}`}
                 width={400}
                 height={266}
-                alt=''
+                alt={title}
               />
             </figure>
             <div
-              className='project-wrapper relative h-auto flex flex-col sm:w-96 md:w-6/12 w-4/5 ml-auto -mt-6 lg:mt-12 sm:-ml-16 bg-white shadow-lg bg-clip-padding bg-opacity-20 border border-none'
+              className='project-wrapper relative h-auto flex flex-col sm:w-96 md:w-6/12 w-4/5 ml-auto -mt-6 lg:mt-24 sm:-ml-8 bg-white shadow-lg bg-clip-padding bg-opacity-20 border border-none'
               style={{ backdropFilter: "blur(20px)" }}
             >
               <h2 className='text-4xl text-white font-extrabold px-8 pt-6 border-left border-red-600'>
