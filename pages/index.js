@@ -6,10 +6,8 @@ import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Socialrow from "@/components/Socialrow";
 import FpProject from "@/components/FpProject";
-import { projects } from "data";
 
 export default function Home({ projects }) {
-  console.log(projects);
   return (
     <>
       <Head>
