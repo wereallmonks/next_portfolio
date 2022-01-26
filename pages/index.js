@@ -1,13 +1,15 @@
 import Head from "next/head";
-import { server } from "../config";
+import { PrismaClient } from "@prisma/client";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Socialrow from "@/components/Socialrow";
 import FpProject from "@/components/FpProject";
+import { projects } from "data";
 
 export default function Home({ projects }) {
+  console.log(projects);
   return (
     <>
       <Head>
@@ -35,13 +37,14 @@ export default function Home({ projects }) {
   );
 }
 
-export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/projects/5`);
-  const projects = await res.json();
-
-  return {
-    props: {
-      projects,
+export async function getStaticProps() {
+  const prisma = new PrismaClient();
+  const projects = await prisma.projects.findUnique({
+    where: {
+      id: 5,
     },
+  });
+  return {
+    props: { projects },
   };
-};
+}
