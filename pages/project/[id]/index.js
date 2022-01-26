@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { server } from "../../../config";
+import { PrismaClient } from "@prisma/client";
 import Head from "next/head";
 import Nav from "../../../components/Nav";
 import Footer from "../../../components/Footer";
@@ -82,9 +82,12 @@ const project = ({ project }) => {
 };
 
 export const getStaticProps = async (context) => {
-  const res = await fetch(`${server}/api/projects/${context.params.id}`);
-
-  const project = await res.json();
+  const prisma = new PrismaClient();
+  const project = await prisma.projects.findUnique({
+    where: {
+      id: parseInt(context.params.id),
+    },
+  });
 
   return {
     props: {
@@ -94,12 +97,9 @@ export const getStaticProps = async (context) => {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`${server}/api/projects/`);
-
-  const projects = await res.json();
-
+  const prisma = new PrismaClient();
+  const projects = await prisma.projects.findMany();
   const ids = projects.map((project) => project.id);
-
   const paths = ids.map((id) => ({
     params: {
       id: id.toString(),

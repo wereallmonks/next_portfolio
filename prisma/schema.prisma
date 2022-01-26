@@ -1,0 +1,19 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Projects {
+  id        Int     @id @default(autoincrement())
+  title     String
+  description   String
+  summary  String
+  projectUrl   String
+  stack   String[]
+  image   String
+}
