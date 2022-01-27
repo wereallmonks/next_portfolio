@@ -1,4 +1,4 @@
-import { server } from "../config";
+import { PrismaClient } from "@prisma/client";
 import Head from "next/head";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
@@ -76,15 +76,11 @@ const projects = ({ projects }) => {
   );
 };
 
-export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/projects/`);
-  const projects = await res.json();
-
+export async function getStaticProps() {
+  const prisma = new PrismaClient();
+  const projects = await prisma.projects.findMany();
   return {
-    props: {
-      projects,
-    },
+    props: { projects },
   };
-};
-
+}
 export default projects;

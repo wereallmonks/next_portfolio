@@ -1,6 +1,4 @@
 import "../tailwindcss/tailwind.css";
-import App from "next/app";
-import { fetchAPI } from "@/lib/projects/api";
 import { createContext } from "react";
 import ToastContainer from "@/components/ToastContainer";
 import { ToastProvider } from "../context/ToastContext";
@@ -12,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <ToastProvider>
-        <GlobalContext.Provider value={global}>
+        <GlobalContext.Provider session={global}>
           <Component {...pageProps} />
           <ToastContainer />
         </GlobalContext.Provider>
@@ -20,10 +18,5 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
-MyApp.getInitialProps = async (ctx) => {
-  const appProps = await App.getInitialProps(ctx);
-  const global = await fetchAPI("/global");
-  return { ...appProps, pageProps: { global } };
-};
 
 export default MyApp;
