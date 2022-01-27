@@ -12,7 +12,7 @@ export default function About() {
           <p className='text-base leading-relaxed w-1/2 xl:w-2/4 lg:w-2/4 mx-auto'>
             I have been working on accessible, well-built projects using code
             with posterity in mind. This has opened opportunities to help
-            develop solutions for clients that share my enthusiam for robust
+            develop solutions for clients that share my enthusiasm for robust
             websites.
           </p>
         </div>
@@ -141,8 +141,3 @@ export default function About() {
     </section>
   );
 }
-
-// My love of
-// web development has allowed me to work on projects for clients using
-// the aforementioned frameworks as well building their CMS using
-// Strapi and Wordpress.

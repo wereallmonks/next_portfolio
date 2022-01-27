@@ -5,7 +5,7 @@ export const projects = [
     description:
       "A website built utilizing Gatsby frontend with Strapi as the source for the headless CMS",
     summary:
-      "For this High School Voleyball wesbite, the data used to populate the properties of the content types formulated in Strapi, not only to render in the pages, but also depending on the content type, had to programmatically create pages from the provided data fields. This was achieved by creating a gatsby-node.js file and utilizing the slug generated in Strapi to create pages in Gatsby. Additionally, the Cloudinary API was installed to handle all median assets uploaded by the client in Strapi. The utility framework TaildwindCSS was used for the styling within Gatsby.",
+      "For this High School Volleyball website, the data used to populate the properties of the content types formulated in Strapi, not only to render in the pages, but also depending on the content type, had to programmatically create pages from the provided data fields. This was achieved by creating a gatsby-node.js file and utilizing the slug generated in Strapi to create pages in Gatsby. Additionally, the Cloudinary API was installed to handle all median assets uploaded by the client in Strapi. The utility framework TaildwindCSS was used for the styling within Gatsby.",
     projectUrl: "https://www.valenciavolleyball.com/",
     stack: ["Gatsby.js", "React", "Strapi CMS", "Tailwind CSS"],
     image:
