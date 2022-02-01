@@ -52,11 +52,11 @@ const projects = ({ projects }) => {
                   <p className='text-sm text-white px-8 py-4 leading-6'>
                     {item.description}
                   </p>
-                  <button className='w-1/4 self-end p-4 btn-alt3 transition-all shadow-2xl'>
+                  <button className='w-1/4 self-end p-4 btn-alt3 shadow-2xl'>
                     <span className='sr-only'></span>
                     <Link href={`/project/${item.id}`}>
                       <svg
-                        className='fill-current text-white h-5 w-5 mr-auto ml-auto'
+                        className='fill-current text-white h-5 w-5 mr-auto ml-auto transition-all inline-block align-middle'
                         xmlns='http://www.w3.org/2000/svg'
                         fillRule='evenodd'
                         clipRule='evenodd'
