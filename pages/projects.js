@@ -78,7 +78,13 @@ const projects = ({ projects }) => {
 
 export async function getStaticProps() {
   const prisma = new PrismaClient();
-  const projects = await prisma.projects.findMany();
+  const projects = await prisma.projects.findMany({
+    orderBy: [
+      {
+        id: "asc",
+      },
+    ],
+  });
   return {
     props: { projects },
   };
