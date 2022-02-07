@@ -1,6 +1,8 @@
 import useSWR from "swr";
-import fetcher from "../lib/fetcher";
 import Track from "./Track";
+import fetch from "unfetch";
+
+const fetcher = (url) => fetch(url).then((r) => r.json());
 
 export default function Spotify() {
   const { data } = useSWR("/api/tracks", fetcher);
