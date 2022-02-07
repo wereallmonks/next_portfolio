@@ -28,6 +28,7 @@ export default function Home({ projects }) {
         title={projects.title}
         description={projects.description}
         image={projects.image}
+        id={projects.id}
       />
       <Socialrow />
       <Footer />
@@ -39,7 +40,7 @@ export async function getStaticProps() {
   const prisma = new PrismaClient();
   const projects = await prisma.projects.findUnique({
     where: {
-      id: 5,
+      id: 2,
     },
   });
   return {

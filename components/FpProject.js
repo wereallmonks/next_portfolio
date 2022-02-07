@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const FpProject = ({ title, description, image }) => {
+const FpProject = ({ title, description, image, id }) => {
   return (
     <>
       <article className='container max-w-screen-xl mx-auto'>
@@ -38,7 +38,7 @@ const FpProject = ({ title, description, image }) => {
               </p>
               <button className='w-1/4 self-end p-4 btn-alt1 transform translate-x-2 translate-y-2 shadow-2xl'>
                 <span className='sr-only'></span>
-                <Link href='/project/4'>
+                <Link href={`/project/${id}`}>
                   <svg
                     className='fill-current text-white h-5 w-6 mr-auto ml-auto'
                     xmlns='http://www.w3.org/2000/svg'

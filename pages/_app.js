@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <ToastProvider>
-        <GlobalContext.Provider session={global}>
+        <GlobalContext.Provider value={global}>
           <Component {...pageProps} />
           <ToastContainer />
         </GlobalContext.Provider>
