@@ -1,5 +1,5 @@
 import { SocialM } from "./SocialM";
-import Twitter from "../src/Twitter";
+import Link from "next/link";
 
 export default function Nav() {
   return (
@@ -55,39 +55,41 @@ export default function Nav() {
               </a>
             </li>
             <li role='none'>
-              <a
-                className='text-bold mr-5 md:mr-12 hover:text-white uppercase'
-                href='/projects'
-                role='menuitem'
-                aria-haspopup='true'
-                aria-expanded='false'
-                tabIndex='0'
-              >
-                Projects
-              </a>
+              <Link href='/projects'>
+                <a
+                  className='text-bold mr-5 md:mr-12 hover:text-white uppercase'
+                  role='menuitem'
+                  aria-haspopup='true'
+                  aria-expanded='false'
+                  tabIndex='0'
+                >
+                  Projects
+                </a>
+              </Link>
             </li>
             <li role='none'>
-              <a
-                className='contact-btn inline-flex sm:items-center bg-gray-800 py-2 px-3 text-bold hover:bg-gray-700 border-2 border-transparent hover:border-2 rounded text-xs font-thin mt-0 transition-all'
-                href='/contact'
-                role='menuitem'
-                aria-haspopup='true'
-                aria-expanded='false'
-                tabIndex='0'
-              >
-                Contact
-                <svg
-                  fill='none'
-                  stroke='currentColor'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  strokeWidth='2'
-                  className='w-4 h-4 ml-1'
-                  viewBox='0 0 24 24'
+              <Link href='/contact'>
+                <a
+                  className='contact-btn inline-flex sm:items-center bg-gray-800 py-2 px-3 text-bold hover:bg-gray-700 border-2 border-transparent hover:border-2 rounded text-xs font-thin mt-0 transition-all'
+                  role='menuitem'
+                  aria-haspopup='true'
+                  aria-expanded='false'
+                  tabIndex='0'
                 >
-                  <path d='M5 12h14M12 5l7 7-7 7'></path>
-                </svg>
-              </a>
+                  Contact
+                  <svg
+                    fill='none'
+                    stroke='currentColor'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
+                    className='w-4 h-4 ml-1'
+                    viewBox='0 0 24 24'
+                  >
+                    <path d='M5 12h14M12 5l7 7-7 7'></path>
+                  </svg>
+                </a>
+              </Link>
             </li>
           </ul>
         </nav>

@@ -134,9 +134,7 @@ export default function About() {
           href='/about'
           className='fp-more flex flex-nowrap transition-all justify-center mx-auto mt-16 hover:text-vienna hover:bg-mushroom border-0 py-2 px-8 focus:outline-none bg-spanish text-mushroom rounded text-lg'
         >
-          <Link href='/about'>
-            <a>Wait there's more </a>
-          </Link>
+          <Link href='/about'>Wait there's more</Link>
           <svg
             fill='none'
             stroke='currentColor'

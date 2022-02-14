@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer
@@ -8,7 +10,7 @@ export default function Footer() {
         <div className='flex items-center -ink--light mx-auto'>
           <p className='m-0 text-gray-300 text-sm'>
             © 2021 Made with <span className='emoji'>⚡</span> by{" "}
-            <a href='/'>Claudia Vizena</a>
+            <Link href='/'>Claudia Vizena</Link>
           </p>
         </div>
       </div>
