@@ -46,8 +46,20 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   font-family: "Cormorant", serif;
+}
+body::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  display: block;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
   background-image: var(--bg--motion-lines);
-  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 .sub--page h2 span {
   @apply pr-2 relative bg-opacity-0;
@@ -71,6 +83,9 @@ header nav a {
 header nav a,
 button {
   font-family: var(--text-second);
+}
+.fp-more:hover svg {
+  color: var(--spanish-purple);
 }
 @property --angle {
   syntax: "<angle>";
@@ -187,8 +202,6 @@ p.no-margin {
   padding: 0;
   position: relative;
   margin-right: 1rem;
-  width: 95px;
-  height: 95px;
 }
 .icon-footer-row a {
 }
@@ -226,7 +239,10 @@ Project Landing Page */
   font-family: var(--text-second);
   @apply text-green-400 opacity-30 text-2xl uppercase font-thin;
 }
-
+.iframe-spotify {
+  outline: solid 0.95rem rgba(42, 3, 26, 0.125);
+  outline-offset: 0px;
+}
 /* 
 need to add the filters plugin https://github.com/benface/tailwindcss-filters */
 

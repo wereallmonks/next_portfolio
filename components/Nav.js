@@ -94,7 +94,7 @@ export default function Nav() {
         <div className='fixed right-0 top-20 md:top-8 mr-2 md:mr-2 pb-20 z-0 social-side self-end ml-10 social-side transform translate-y-10'>
           <div className='flex relative pb-12 md:pb-12'>
             <div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
-              <div className='h-full w-1 bg-[#ebd2bc]  pointer-events-none'></div>
+              <div className='h-full w-[3px] bg-[#ebd2bc] bg-opacity-50 pointer-events-none'></div>
             </div>
           </div>
           <SocialM />

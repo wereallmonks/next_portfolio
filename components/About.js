@@ -9,7 +9,7 @@ export default function About() {
             Skills &amp; <br />
             Experience
           </h1>
-          <p className='text-base leading-relaxed w-1/2 xl:w-2/4 lg:w-2/4 mx-auto'>
+          <p className='text-base leading-relaxed w-7/12 xl:w-2/4 lg:w-2/4 mx-auto'>
             I have been working on accessible, well-built projects using code
             with posterity in mind. This has opened opportunities to help
             develop solutions for clients that share my enthusiasm for robust
@@ -23,7 +23,10 @@ export default function About() {
             </h2>
             <div className='flex flex-col items-start sm:text-left text-center -mb-1 space-y-1 md:space-y-2 md:pl-4'>
               <a className='alpha flex flex-nowrap text-base text-redorpiment py-2 pl-10 sm:pl-10 lg:pl-2'>
-                <span className='bg-transparent w-4 h-6 mr-2 rounded-full inline-flex items-center justify-center '>
+                <span
+                  aria-hidden='true'
+                  className='bg-transparent w-4 h-6 mr-2 rounded-full inline-flex items-center justify-center '
+                >
                   <svg
                     fill='none'
                     stroke='currentColor'
@@ -40,7 +43,10 @@ export default function About() {
                 NextJS
               </a>
               <a className='alpha flex flex-nowrap text-base text-redorpiment py-2 pl-10 sm:pl-10 lg:pl-2'>
-                <span className='bg-transparent w-4 h-6 mr-2 rounded-full inline-flex items-center justify-center'>
+                <span
+                  aria-hidden='true'
+                  className='bg-transparent w-4 h-6 mr-2 rounded-full inline-flex items-center justify-center'
+                >
                   <svg
                     fill='none'
                     stroke='currentColor'
@@ -57,7 +63,10 @@ export default function About() {
                 Gatsby
               </a>
               <a className='alpha flex flex-nowrap py-2 pl-10 sm:pl-10 lg:pl-2 text-base text-redorpiment'>
-                <span className='bg-transparent w-4 h-6 mr-2 rounded-full inline-flex items-center justify-center'>
+                <span
+                  aria-hidden='true'
+                  className='bg-transparent w-4 h-6 mr-2 rounded-full inline-flex items-center justify-center'
+                >
                   <svg
                     fill='none'
                     stroke='currentColor'
@@ -74,7 +83,10 @@ export default function About() {
                 Node.js
               </a>
               <a className='alpha flex flex-nowrap text-base text-redorpiment py-2 pl-10 sm:pl-10 lg:pl-2'>
-                <span className='bg-transparent w-4 h-6 mr-2 rounded-full inline-flex items-center justify-center'>
+                <span
+                  aria-hidden='true'
+                  className='bg-transparent w-4 h-6 mr-2 rounded-full inline-flex items-center justify-center'
+                >
                   <svg
                     fill='none'
                     stroke='currentColor'
@@ -93,20 +105,20 @@ export default function About() {
             </div>
           </div>
 
-          <div className='p-4 lg:w-2/4 sm:w-1/2 w-8/12 mx-auto'>
+          <div className=' p-4 lg:w-2/4 sm:w-1/2 w-8/12 mx-auto'>
             <h2 className='title-font tracking-wide text-white mb-4 text-xl font-extrabold text-center sm:text-left uppercase'>
               Skills
             </h2>
-            <div className='flex justify-start'>
-              <ul className='bg-black bg-opacity-40 rounded-lg w-96 text-mushroom leading-6 px-4 pt-1 pb-2'>
+            <div className='flex justify-start w-full sm:w-4/5 md:w-full'>
+              <ul className='bg-black bg-opacity-80 rounded-lg w-96 text-mushroom leading-6 px-4 pt-4 pb-4'>
                 <li className='text-sm alpha px-4 py-2 border-b border-yellow-500 border-opacity-30 w-full rounded-t-lg'>
                   Progressive Web Apps (PWA)
                 </li>
                 <li className='text-sm alpha px-4 py-2 border-b border-yellow-500 border-opacity-30 w-full'>
-                  Headless CMS w/ GraphQL
+                  Decoupled CMS w/ Jamstack
                 </li>
                 <li className='text-sm alpha px-4 py-2 border-b border-yellow-500 border-opacity-30  w-full'>
-                  HTML / CSS Frameworks
+                  TailwindCSS Framework
                 </li>
                 <li className='text-sm alpha px-4 py-2 border-b border-yellow-500 border-opacity-30 w-full'>
                   API generation
@@ -120,7 +132,7 @@ export default function About() {
         </div>
         <button
           href='/about'
-          className='flex flex-nowrap transition-all justify-center mx-auto mt-16 hover:text-vienna hover:bg-mushroom border-0 py-2 px-8 focus:outline-none bg-spanish text-mushroom rounded text-lg'
+          className='fp-more flex flex-nowrap transition-all justify-center mx-auto mt-16 hover:text-vienna hover:bg-mushroom border-0 py-2 px-8 focus:outline-none bg-spanish text-mushroom rounded text-lg'
         >
           <Link href='/about'>
             <a>Wait there's more </a>

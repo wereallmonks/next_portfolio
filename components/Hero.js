@@ -9,7 +9,7 @@ export default function Hero() {
               <br />
               ideas in code.
             </h1>
-            <p className='text-mushroom no-margin text-lg md:text-xl text-left w-11/12 md:w-7/12 xl:w-6/12'>
+            <p className='text-mushroom no-margin  text-lg md:text-xl text-left w-11/12 md:w-7/12 xl:w-6/12 leading-none'>
               My name is Claudia Marie Vizena and I specialize in developing
               websites and apps with Javascript
               <svg

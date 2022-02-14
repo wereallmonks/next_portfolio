@@ -30,7 +30,7 @@ export const SocialM = () => {
         return (
           <div key={item.id} className='flex relative pb-12'>
             <div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
-              <div className='h-full w-1 bg-[#ebd2bc] pointer-events-none'></div>
+              <div className='h-full w-[3px] bg-[#ebd2bc] bg-opacity-50 pointer-events-none'></div>
             </div>
             <div className='flex-shrink-0 rounded-full prim-background inline-flex items-center justify-center text-white relative z-10'>
               <Link href={item.link}>

@@ -5,12 +5,12 @@ export default function Track(track) {
         {track.ranking}
       </span>
       <a
-        className='alpha mr-1 text-gray-100 text-sm text-bold underline hover:no-underline'
+        className='alpha mr-1 text-gray-100 text-xs text-bold underline hover:no-underline break-all'
         href={track.songUrl}
       >
         {track.title}
       </a>
-      <span className='mx-2 border-l-2 border-spanish border-opacity-70 h-5 inline-block transform -skew-x-12'></span>
+      <span className='mx-2 border-l-2 border-spanish border-opacity-70 h-5 inline-block'></span>
       <p className='col-span-full alpha text-xs  text-gray-100 text-opacity-80'>
         {track.artist}
       </p>

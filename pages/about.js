@@ -66,8 +66,8 @@ const About = () => {
                 <p className='alpha leading-relaxed text-xs lg:w-9/12 text-left text-white mb-2'>
                   I've collected vinyl records since I was a teen and music is
                   always in the background, whether I'm coding or cooking. If
-                  you're interested, this is what I've been listening to lately
-                  as well as my current favorite playlist.
+                  you're interested, below is a list of my current favorite
+                  tracks on Spotify.
                 </p>
                 <div className='grid px-4 sm:px-1'>
                   <Spotify />
@@ -87,7 +87,7 @@ const About = () => {
                 <svg
                   fill='none'
                   stroke='currentColor'
-                  className='text-redorpiment opacity-70 w-8 h-8 flex-shrink-0 mr-2'
+                  className='text-redorpiment opacity-70 w-8 h-8 flex-shrink-0 mr-4 md:mr-2'
                   xmlns='http://www.w3.org/2000/svg'
                   fillRule='evenodd'
                   clipRule='evenodd'
@@ -104,7 +104,7 @@ const About = () => {
                 src='https://open.spotify.com/embed/playlist/5kgVJPGaIt79ZLsVuj82WW'
                 title='Clo in Quarantine IV'
                 width='300'
-                className='flex justify-center mx-auto shadow-2xl border-vienna border-opacity-70'
+                className='iframe-spotify flex justify-center mx-auto shadow-2xl border-vienna border-opacity-70 p-0 sm:p-2 xl:p-0'
               ></iframe>
             </div>
           </aside>

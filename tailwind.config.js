@@ -19,6 +19,9 @@ module.exports = {
       minWidth: {
         "hero-min": "11.5rem",
       },
+      fontFamily: {
+        second: ["Montserrat, serif"],
+      },
     },
   },
   variants: {

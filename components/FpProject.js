@@ -15,9 +15,9 @@ const FpProject = ({ title, description, image, id }) => {
             back-end.
           </p>
         </div>
-        <div className='proj block sm:grid sm:grid-cols-2 ml-6 mr-16 md:mr-16 my-6'>
+        <div className='proj grid grid-cols-1 md:grid-cols-2 ml-6 mr-16 md:mr-16 my-6'>
           <div className='block sm:ml-24 sm:col-span-2 h-full sm:h-64 rounded-md md:flex sm:flex-row items-center self-center align-center mx-auto my-0 md:my-6 relative'>
-            <figure className='h-5/6 '>
+            <figure className='sm:h-5/6 '>
               <Image
                 className='object-cover'
                 src={`${image}`}
@@ -27,7 +27,7 @@ const FpProject = ({ title, description, image, id }) => {
               />
             </figure>
             <div
-              className='project-wrapper relative h-auto flex flex-col sm:w-96 md:w-6/12 w-4/5 ml-auto -mt-6 lg:mt-24 sm:-ml-8 bg-white shadow-lg bg-clip-padding bg-opacity-20 border border-none'
+              className='project-wrapper relative h-auto flex flex-col sm:w-96 md:w-6/12 w-4/5 ml-auto -mt-6 sm:mt-2 lg:mt-24 sm:-ml-4 bg-white shadow-lg bg-clip-padding bg-opacity-20 border border-none'
               style={{ backdropFilter: "blur(20px)" }}
             >
               <h2 className='text-4xl text-white font-extrabold px-8 pt-6 border-left border-red-600'>
