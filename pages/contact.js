@@ -64,8 +64,8 @@ export default function ContactPage() {
             <input type='hidden' name='redirect' className='redirect' />
             <div className='mb-10'>
               <p className='alpha font-medium text-base mb-5 w-9/12'>
-                I'm always interested in exploring new projects and ideas. Send
-                me a message and I'll get back to you shortly.
+                I&apos;m always interested in exploring new projects and ideas.
+                Send me a message and I&apos;ll get back to you shortly.
               </p>
               <hr className='border-gray-600' />
             </div>

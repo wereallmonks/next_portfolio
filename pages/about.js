@@ -64,10 +64,10 @@ const About = () => {
                   <span>turn it up</span>
                 </h2>
                 <p className='alpha leading-relaxed text-xs lg:w-9/12 text-left text-white mb-2'>
-                  I've collected vinyl records since I was a teen and music is
-                  always in the background, whether I'm coding or cooking. If
-                  you're interested, below is a list of my current favorite
-                  tracks this month on Spotify.
+                  I&apos;ve collected vinyl records since I was a teen and music
+                  is always in the background, whether I&apos;m coding or
+                  cooking. If you&apos;re interested, below is a list of my
+                  current favorite tracks this month on Spotify.
                 </p>
                 <div className='grid px-4 sm:px-1'>
                   <Spotify />

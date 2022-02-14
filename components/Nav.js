@@ -31,28 +31,30 @@ export default function Nav() {
             aria-label='menu links'
           >
             <li role='none'>
-              <a
-                className='text-bold mr-5 md:mr-12 hover:text-white uppercase'
-                href='/'
-                role='menuitem'
-                aria-haspopup='true'
-                aria-expanded='false'
-                tabIndex='0'
-              >
-                Home
-              </a>
+              <Link href='/'>
+                <a
+                  className='text-bold mr-5 md:mr-12 hover:text-white uppercase'
+                  role='menuitem'
+                  aria-haspopup='true'
+                  aria-expanded='false'
+                  tabIndex='0'
+                >
+                  Home
+                </a>
+              </Link>
             </li>
             <li role='none'>
-              <a
-                className='text-bold mr-5 md:mr-12 hover:text-white uppercase'
-                href='/about'
-                role='menuitem'
-                aria-haspopup='true'
-                aria-expanded='false'
-                tabIndex='0'
-              >
-                About
-              </a>
+              <Link href='/about'>
+                <a
+                  className='text-bold mr-5 md:mr-12 hover:text-white uppercase'
+                  role='menuitem'
+                  aria-haspopup='true'
+                  aria-expanded='false'
+                  tabIndex='0'
+                >
+                  About
+                </a>
+              </Link>
             </li>
             <li role='none'>
               <Link href='/projects'>
