@@ -67,7 +67,7 @@ const About = () => {
                   I've collected vinyl records since I was a teen and music is
                   always in the background, whether I'm coding or cooking. If
                   you're interested, below is a list of my current favorite
-                  tracks on Spotify.
+                  tracks this month on Spotify.
                 </p>
                 <div className='grid px-4 sm:px-1'>
                   <Spotify />
@@ -101,7 +101,7 @@ const About = () => {
               <iframe
                 height='380'
                 loading='lazy'
-                src='https://open.spotify.com/embed/playlist/5kgVJPGaIt79ZLsVuj82WW'
+                src='https://open.spotify.com/embed/playlist/7EqAiLkh03xsGiCpLMyOSI?utm_source=generator'
                 title='Clo in Quarantine IV'
                 width='300'
                 className='iframe-spotify flex justify-center mx-auto shadow-2xl border-vienna border-opacity-70 p-0 sm:p-2 xl:p-0'
