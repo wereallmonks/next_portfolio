@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <header className='min-h-full bg-transparent bg-primary text-white grid relative z-50'>
       <div
-        className='relative container mx-auto flex flex-wrap pt-0 pb-4 lg:py-6 md:px-10 pr-6 flex-col md:flex-row items-end md:justify-end md:items-baseline
+        className='relative container mx-auto flex flex-wrap pt-0 pb-4 lg:py-6 md:px-10 pl-4 pr-4 flex-col md:flex-row items-end md:justify-end md:items-baseline
       '
       >
         <a className='flex title-font font-medium items-center text-white mb-2 mt-2 md:mb-0 sm:hidden'>
@@ -95,7 +95,7 @@ export default function Nav() {
             </li>
           </ul>
         </nav>
-        <div className='fixed right-0 top-20 md:top-8 mr-2 md:mr-2 pb-20 z-0 social-side self-end ml-10 social-side transform translate-y-10'>
+        <div className='fixed right-0 top-20 md:top-8 mr-3 sm:mr-2 md:mr-2 pb-20 z-0 social-side self-end ml-10 social-side transform translate-y-10'>
           <div className='flex relative pb-12 md:pb-12'>
             <div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
               <div className='h-full w-[3px] bg-[#ebd2bc] bg-opacity-50 pointer-events-none'></div>

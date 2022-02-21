@@ -3,6 +3,7 @@ import { PrismaClient } from "@prisma/client";
 import Head from "next/head";
 import Nav from "../../../components/Nav";
 import Footer from "../../../components/Footer";
+import Fade from "react-reveal/Fade";
 
 const project = ({ project }) => {
   return (
@@ -19,57 +20,65 @@ const project = ({ project }) => {
         ></link>
       </Head>
       <Nav />
-      <h1 className='page-title'>{project.title}</h1>
-      <span className='font-light alpha text-gray-300 text-sm h-8 p-2 bg-gray-800 capitalize tracking-wide shadow-xl inline-block transform translate-y-4 -translate-x-14 align-middle'>
-        project
-      </span>
+      <h1 className='relative page-title overflow-visible projects'>
+        {project.title}
+      </h1>
+
       <section className='text-gray-400 bg-primary body-font sub--page mb-16'>
-        <div className='container max-w-screen-xl pl-10 pr-28 mt-12 mx-auto flex flex-wrap'>
-          <p className='alpha leading-relaxed text-sm w-11/12 lg:w-9/12 '>
-            {project.summary}
-          </p>
-          <div className='flex flex-wrap sm:flex-nowrap w-full justify-between mr-12 my-8 black bg-opacity-40 bg-black'>
-            <div className='w-60 sm:w-3/4 xl:w-72'>
-              <div className='flex divide-x-4 divide-green-900 px-4 py-4'>
-                <h3 className='project-vert cursor-text font-semibold'>
-                  Stack
-                </h3>
-                <ul className='pl-4 flex flex-col items-left justify-start my-1'>
-                  {project.stack.map((item, i) => {
-                    return (
-                      <li
-                        className='alpha md:text-sm text-gray-200 pb-1'
-                        key={i}
-                      >
-                        {item}
-                      </li>
-                    );
-                  })}
-                </ul>
+        <div className='md:container md:max-w-screen-xl pl-10 pr-14 sm:pr-28 mt-12 mx-auto flex flex-wrap'>
+          <Fade duration={2000}>
+            <p className='alpha leading-relaxed text-sm w-11/12 lg:w-9/12 '>
+              {project.summary}
+            </p>
+          </Fade>
+          <div className='flex flex-wrap sm:flex-nowrap w-full flex-col md:flex-row justify-between mr-12 my-8 black bg-opacity-60 bg-black'>
+            <div className='w-60 sm:w-[64rem] order-2 sm:order-1'>
+              <Fade duration={3000}>
+                <div className='flex justify-center sm:justify-start divide-x-4 divide-green-900 px-2 pt-2 pb-8 sm:pt-8 md:pt-24'>
+                  <h3 className='project-vert'>Stack</h3>
+                  <ul className='pl-4 flex flex-col items-left justify-start my-1'>
+                    {project.stack.map((item, i) => {
+                      return (
+                        <li
+                          className='alpha md:text-sm text-gray-200 pb-1'
+                          key={i}
+                        >
+                          {item}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </Fade>
+            </div>
+            <div className='flex flex-col sm:mt-6 mb-6 px-4 md:px-8 order-1 sm:order-2'>
+              <picture className='block mt-12 md:mt-0'>
+                <img
+                  className='card-img-top'
+                  src={project.image}
+                  alt='project image'
+                />
+              </picture>
+              <div className='flex justify-center sm:justify-start flex-row mt-4 p-0 mb-2'>
+                <Link
+                  className='self-center'
+                  href={project.projectUrl}
+                  alt={project.title}
+                >
+                  Visit
+                </Link>
+                <Link href={project.projectUrl} alt={project.title}>
+                  <svg
+                    className='fill-current text-white hover:text-opacity-50 h-5 w-8 pl-2 lg:pl-2 transform lg:translate-y-1 animate-pulse'
+                    xmlns='http://www.w3.org/2000/svg'
+                    fillRule='evenodd'
+                    clipRule='evenodd'
+                  >
+                    <path d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z' />
+                  </svg>
+                </Link>
               </div>
             </div>
-            <div className='flex items-end trasform mt-6 mb-6 lg:m-0 lg:-translate-x-1'>
-              <Link href={project.projectUrl} alt={project.title}>
-                Visit
-              </Link>
-              <Link href={project.projectUrl} alt={project.title}>
-                <svg
-                  className='fill-current text-white hover:text-opacity-50 h-5 w-8 mx-auto pl-2 lg:pl-2 transform lg:translate-y-1 animate-pulse'
-                  xmlns='http://www.w3.org/2000/svg'
-                  fillRule='evenodd'
-                  clipRule='evenodd'
-                >
-                  <path d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z' />
-                </svg>
-              </Link>
-            </div>
-            <picture className='block sm:flex sm:items-center mt-12 md:mt-0'>
-              <img
-                className='card-img-top'
-                src={project.image}
-                alt='project image'
-              />
-            </picture>
           </div>
           <div className='block btn justify-center text-center md:flex my-4 py-10 w-full bg-gradient-to-r bg-vienna shadow-2xl transform translate-y-24'>
             <Link href='/projects'>Back to Projects</Link>

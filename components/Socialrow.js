@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Fade from "react-reveal/Fade";
 
 export default function Socialrow() {
   const social = [
@@ -34,17 +35,19 @@ export default function Socialrow() {
         {social.map((item) => {
           return (
             <Link key={item.id} href={item.link}>
-              <a className='vzion-icon-button' aria-label='Twitter'>
-                <svg
-                  className='fill-current text-mushroom hover:text-gray-100 w-[55px] md:w-[95px]'
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox={item.viewBox}
-                  aria-hidden='true'
-                  focusable='false'
-                >
-                  <path d={item.path} />
-                </svg>
-              </a>
+              <Fade bottom cascade>
+                <a className='vzion-icon-button' aria-label='Twitter'>
+                  <svg
+                    className='fill-current text-mushroom hover:text-gray-100 w-[55px] md:w-[95px]'
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox={item.viewBox}
+                    aria-hidden='true'
+                    focusable='false'
+                  >
+                    <path d={item.path} />
+                  </svg>
+                </a>
+              </Fade>
             </Link>
           );
         })}

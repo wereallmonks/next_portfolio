@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Flip from "react-reveal/Flip";
 
 export const SocialM = () => {
   const items = [
@@ -32,20 +33,22 @@ export const SocialM = () => {
             <div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
               <div className='h-full w-[3px] bg-[#ebd2bc] bg-opacity-50 pointer-events-none'></div>
             </div>
-            <div className='flex-shrink-0 rounded-full prim-background inline-flex items-center justify-center text-white relative z-10'>
-              <Link href={item.link}>
-                <svg
-                  className='fill-current w-10 p-2 text-[#ebd2bc] hover:text-gray-100 cursor-pointer
+            <Flip bottom>
+              <div className='flex-shrink-0 rounded-full prim-background inline-flex items-center justify-center text-white relative z-10'>
+                <Link href={item.link}>
+                  <svg
+                    className='fill-current w-10 p-2 text-[#ebd2bc] hover:text-gray-100 cursor-pointer
                     '
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox={item.viewBox}
-                  aria-hidden='true'
-                  focusable='false'
-                >
-                  <path d={item.path}></path>
-                </svg>
-              </Link>
-            </div>
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox={item.viewBox}
+                    aria-hidden='true'
+                    focusable='false'
+                  >
+                    <path d={item.path}></path>
+                  </svg>
+                </Link>
+              </div>
+            </Flip>
           </div>
         );
       })}

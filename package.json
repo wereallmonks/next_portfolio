@@ -20,6 +20,7 @@
     "react-dom": "17.0.2",
     "react-hook-form": "^7.17.4",
     "react-icons": "^4.2.0",
+    "react-reveal": "^1.2.2",
     "swr": "^0.5.6",
     "unfetch": "^4.2.0"
   },

@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 import axios from "axios";
 import { useToast } from "../hooks/useToast";
+import Fade from "react-reveal/Fade";
 
 export default function ContactPage() {
   const toast = useToast();
@@ -58,15 +59,18 @@ export default function ContactPage() {
         <div className='container px-5 mx-auto flex flex-wrap'>
           <form
             onSubmit={handleSubmit(onSubmitForm)}
-            className='text-gray-300 -mt-4 p-10 mr-12 max-w-xl mx-auto border-0  bg-vienna bg-opacity-20 shadow-2xl transform lg:translate-y-2 lg:translate-x-2 '
+            className='text-gray-300 -mt-3 p-10 mr-20 max-w-xl mx-auto border-0  bg-vienna bg-opacity-20 shadow-2xl transform lg:translate-y-2 lg:translate-x-2 '
           >
             <div className='form-message'></div>
             <input type='hidden' name='redirect' className='redirect' />
             <div className='mb-10'>
-              <p className='alpha font-medium text-base mb-5 w-9/12'>
-                I&apos;m always interested in exploring new projects and ideas.
-                Send me a message and I&apos;ll get back to you shortly.
-              </p>
+              <Fade duration={2000}>
+                <p className='alpha font-medium text-base mb-5 w-9/12'>
+                  I&apos;m always interested in exploring new projects and
+                  ideas. Send me a message and I&apos;ll get back to you
+                  shortly.
+                </p>
+              </Fade>
               <hr className='border-gray-600' />
             </div>
 

@@ -101,7 +101,6 @@ button {
 .page-title {
   color: var(--mushroom-cream);
   z-index: 999;
-  overflow: overlay;
   @apply -mb-1 md:mt-0 text-3xl font-medium bg-spanish py-3 px-4 inline-block;
   animation-name: heading-animation;
   -webkit-animation-duration: 4s;
@@ -137,7 +136,7 @@ p.no-margin {
   margin: 0 !important;
 }
 .btn a {
-  @apply p-2 border-2 border-opacity-70 border-gray-400 hover:border-gray-200 hover:text-gray-100;
+  @apply p-2 border-2 border-opacity-80 border-gray-400 hover:border-gray-200 hover:text-gray-100;
 }
 .contact-btn:hover svg {
   @apply transform translate-x-1;
@@ -237,7 +236,20 @@ Project Landing Page */
   writing-mode: vertical-rl;
   text-orientation: upright;
   font-family: var(--text-second);
-  @apply text-green-400 opacity-30 text-2xl uppercase font-thin;
+  @apply text-green-400 opacity-30 text-2xl uppercase font-normal;
+}
+h1.page-title.projects:after {
+  content: "project";
+  font-family: "Montserrat", sans-serif;
+  right: -75px;
+  bottom: -28px;
+  @apply absolute font-light text-gray-300 text-sm h-8 p-2 bg-gray-800 capitalize tracking-wide shadow-xl inline-block  align-middle;
+}
+@media (max-width: 513px) {
+  h1.page-title.projects:after {
+    right: -52px;
+    bottom: -20px;
+  }
 }
 .iframe-spotify {
   outline: solid 0.95rem rgba(42, 3, 26, 0.125);
