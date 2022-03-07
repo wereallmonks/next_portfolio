@@ -4,6 +4,7 @@ import Head from "next/head";
 import Nav from "../../../components/Nav";
 import Footer from "../../../components/Footer";
 import Fade from "react-reveal/Fade";
+import Image from "next/image";
 
 const project = ({ project }) => {
   return (
@@ -11,8 +12,24 @@ const project = ({ project }) => {
       <Head>
         <title>claudiamarie.me projects</title>
         <meta
-          name='portfolio'
-          content='web development, programming, next.js'
+          name='description'
+          content='Projects of a JavaScript web development and app creator contact'
+        />
+        <meta
+          name='keyword'
+          content='projects for portfolio, javascript, developer, claudiamarie'
+        />
+        <meta
+          content='width=device-width, initial-scale=1, 
+      shrink-to-fit=no'
+        />
+        <meta
+          property='og:title'
+          content='Project by claudiamarie | Front End Web Developer'
+        />
+        <meta
+          property='og:description'
+          content='Contact a JavaScript development and app creator'
         />
         <link
           href='https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&display=swap'
@@ -24,7 +41,7 @@ const project = ({ project }) => {
         {project.title}
       </h1>
 
-      <section className='text-gray-400 bg-primary body-font sub--page mb-16'>
+      <section className='text-gray-200 bg-primary body-font sub--page mb-16'>
         <div className='md:container md:max-w-screen-xl pl-10 pr-14 sm:pr-28 mt-12 mx-auto flex flex-wrap'>
           <Fade duration={2000}>
             <p className='alpha leading-relaxed text-sm w-11/12 lg:w-9/12 '>
@@ -32,10 +49,10 @@ const project = ({ project }) => {
             </p>
           </Fade>
           <div className='flex flex-wrap sm:flex-nowrap w-full flex-col md:flex-row justify-between mr-12 my-8 black bg-opacity-60 bg-black'>
-            <div className='w-60 sm:w-[64rem] order-2 sm:order-1'>
+            <div className='w-60 sm:w-[35rem] order-2 sm:order-1'>
               <Fade duration={3000}>
                 <div className='flex justify-center sm:justify-start divide-x-4 divide-green-900 px-2 pt-2 pb-8 sm:pt-8 md:pt-24'>
-                  <h3 className='project-vert'>Stack</h3>
+                  <p className='project-vert'>Stack</p>
                   <ul className='pl-4 flex flex-col items-left justify-start my-1'>
                     {project.stack.map((item, i) => {
                       return (
@@ -53,15 +70,19 @@ const project = ({ project }) => {
             </div>
             <div className='flex flex-col sm:mt-6 mb-6 px-4 md:px-8 order-1 sm:order-2'>
               <picture className='block mt-12 md:mt-0'>
-                <img
+                <Image
                   className='card-img-top'
                   src={project.image}
-                  alt='project image'
+                  alt='project screengrab'
+                  width={1080}
+                  height={643}
+                  placeholder='blur'
+                  priority
                 />
               </picture>
               <div className='flex justify-center sm:justify-start flex-row mt-4 p-0 mb-2'>
                 <Link
-                  className='self-center'
+                  className='self-center hover:text-gray-400 hover:underline'
                   href={project.projectUrl}
                   alt={project.title}
                 >
@@ -80,7 +101,7 @@ const project = ({ project }) => {
               </div>
             </div>
           </div>
-          <div className='block btn justify-center text-center md:flex my-4 py-10 w-full bg-gradient-to-r bg-vienna shadow-2xl transform translate-y-24'>
+          <div className='block btn justify-center text-center md:flex my-4 py-10 w-full bg-spanish font-semibold shadow-2xl transform translate-y-24'>
             <Link href='/projects'>Back to Projects</Link>
           </div>
         </div>

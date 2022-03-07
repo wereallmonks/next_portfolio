@@ -6,13 +6,13 @@ export default function About() {
     <section className='text-gray-400 bg-primary body-font relative'>
       <div className='container px-5 py-0 md:py-36 mx-auto'>
         <div className='text-left md:text-center mb-10'>
-          <Fade delay={1000} duration={3000}>
+          <Fade duration={3000}>
             <h1 className='sm:text-3xl text-3xl md:text-5xl font-medium text-center title-font text-white mb-4'>
               Skills &amp; <br />
               Experience
             </h1>
           </Fade>
-          <Fade duration={2000}>
+          <Fade>
             <p className='text-base leading-relaxed w-7/12 xl:w-2/4 lg:w-2/4 mx-auto'>
               I have been working on accessible, well-built projects using code
               with posterity in mind. This has opened opportunities to help
@@ -149,9 +149,7 @@ export default function About() {
           href='/about'
           className='fp-more flex flex-nowrap transition-all justify-center mx-auto mt-16 hover:text-vienna hover:bg-mushroom border-0 py-2 px-8 focus:outline-none bg-spanish text-mushroom rounded text-lg'
         >
-          <Fade delay={2000} duration={2000}>
-            <Link href='/about'>Wait there&apos;s more</Link>
-          </Fade>
+          <Link href='/about'>Wait there&apos;s more</Link>
           <svg
             fill='none'
             stroke='currentColor'

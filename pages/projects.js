@@ -37,7 +37,7 @@ const projects = ({ projects }) => {
                 className='h-auto rounded-md block md:flex flex-col justify-center my-16 relative'
               >
                 <Fade cascade duration={2000}>
-                  <figure className='h-auto mr-4 md:mr-0'>
+                  <figure className='aspect-square h-auto mr-4 md:mr-0'>
                     <Image
                       src={item.image}
                       width={400}
@@ -55,10 +55,10 @@ const projects = ({ projects }) => {
                     className='project-wrapper flex flex-col ml-auto sm:ml-12 -mt-14 sm:-mt-16 w-4/5 sm:w-72 bg-white shadow-lg bg-clip-padding bg-opacity-20 border border-none relative'
                     style={{ backdropFilter: "blur(20px)" }}
                   >
-                    <h2 className='text-4xl text-white font-extrabold px-8 pt-3 mt-4'>
+                    <h2 className='proj--title text-4xl text-white font-extrabold px-8 pt-3 mt-4'>
                       {item.title}
                     </h2>
-                    <p className='text-xs text-white font-second px-8 py-4 leading-4'>
+                    <p className='text-xs text-white font-second font-bold px-8 py-4 leading-4'>
                       {item.description}
                     </p>
                     <button className='w-1/4 self-end p-4 btn-alt3 shadow-2xl'>

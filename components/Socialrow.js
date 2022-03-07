@@ -36,7 +36,11 @@ export default function Socialrow() {
           return (
             <Link key={item.id} href={item.link}>
               <Fade bottom cascade>
-                <a className='vzion-icon-button' aria-label='Twitter'>
+                <a
+                  className='vzion-icon-button'
+                  style={{ cursor: "pointer" }}
+                  aria-label='social icons'
+                >
                   <svg
                     className='fill-current text-mushroom hover:text-gray-100 w-[55px] md:w-[95px]'
                     xmlns='http://www.w3.org/2000/svg'

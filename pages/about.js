@@ -3,6 +3,8 @@ import Head from "next/head";
 import Nav from "@/components/Nav";
 import Footer from "../components/Footer";
 import Fade from "react-reveal/Fade";
+import Image from "next/image";
+import profilePic from "../public/claudiamarie-about.png";
 
 const About = () => {
   return (
@@ -10,8 +12,16 @@ const About = () => {
       <Head>
         <title>claudiamarie.me about page</title>
         <meta
-          name='react portfolio'
-          content='web development, programming, next.js'
+          name='description'
+          content='JavaScript web development and app creator'
+        />
+        <meta
+          name='keyword'
+          content='portfolio, javascript, developer, claudiamarie'
+        />
+        <meta
+          content='width=device-width, initial-scale=1, 
+      shrink-to-fit=no'
         />
         <link
           href='https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&display=swap'
@@ -27,10 +37,16 @@ const About = () => {
           // style={{ maxHeight: "1600px" }}
           className='container masonry-2col pr-20 lg:pr-16 mt-6 sm:mt-0'
         >
-          <div className='masonry-1 lg:overflow-hidden relative max-w-[320px] md:max-w-full h-[450px] object-cover sm:h-96 transform sm:-translate-y-1 mb-10 lg:mb-0 rounded-none md:p-8 lg:p-16'>
-            <Fade duration={3000}>
-              <img alt='feature' className='img-responsive' src='/me.jpg' />
-            </Fade>
+          <div className='masonry-1 lg:overflow-hidden relative aspect-w-16 aspect-h-9 max-w-[320px] md:max-w-full h-[450px] object-cover sm:h-96 transform sm:-translate-y-1 mb-10 lg:mb-0 rounded-none md:p-8 lg:p-16'>
+            <Image
+              className='img-responsive'
+              src={profilePic}
+              alt='claudiamarie web developer'
+              width={520}
+              height={641}
+              placeholder='blur' // Blur-up while loading
+              priority
+            />
           </div>
 
           <div className='max-w-full masonry-2 relative bg--motion-lines-alt shadow-2xl translate -translate-y-6 px-4 lg:py-2 -mb-10 lg:pl-8 lg:text-left text-left md:text-center'>

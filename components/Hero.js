@@ -1,4 +1,6 @@
 import Fade from "react-reveal/Fade";
+import Image from "next/image";
+import profilePic from "../public/claudiamarie-frontpage-opt.png";
 
 export default function Hero() {
   return (
@@ -29,11 +31,15 @@ export default function Hero() {
             </Fade>
           </div>
         </div>
-        <div className='col-span-1 lg:max-w-sm transform translate-y-8  md:translate-y-20 -translate-x-2 sm:-translate-x-28 bg-transparent grid items-center sm:mx-10 sm:my-4 lg:mx-20 lg:my-10 shadow-2xl'>
-          <img
-            alt='claudia marie web developer'
-            src='https://res.cloudinary.com/dsfa5pvfb/image/upload/v1638309036/Screen_Shot_2021-11-30_at_1.48.04_PM_tblshp.png'
-            className='object-cover -ml-2 -mb-4 p-0 w-full h-2/5 md:h-4/5 xl:h-full md:min-w-hero-min'
+        <div className='aspect-w-16 aspect-h-9 object-cover -ml-2 -mb-4 p-0 w-full h-2/5 md:h-4/5  md:min-w-hero-min col-span-1 lg:max-w-[19rem]] transform translate-y-32  md:translate-y-20 -translate-x-2 sm:-translate-x-28 bg-transparent grid items-center sm:mx-10 sm:my-4 lg:mr-12 lg:my-10 shadow-2xl'>
+          <Image
+            src={profilePic}
+            className='w-full h-auto'
+            alt='claudia marie clutching books in front of vines'
+            width={812}
+            height={880}
+            placeholder='blur' // Blur-up while loading
+            priority
           />
         </div>
       </div>

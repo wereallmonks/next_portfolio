@@ -13,9 +13,28 @@ export default function Home({ projects }) {
       <Head>
         <title>claudiamarie.me</title>
         <meta
-          name='react portfolio'
-          content='web development, programming, next.js'
+          name='description'
+          content='JavaScript web development and app creator'
         />
+        <meta
+          name='keyword'
+          content='portfolio, javascript, developer, claudiamarie'
+        />
+        <meta
+          content='width=device-width, initial-scale=1, 
+      shrink-to-fit=no'
+        />
+        <meta
+          property='og:title'
+          content='claudiamarie | Front End Web Developer'
+        />
+        <meta
+          property='og:description'
+          content='JavaScript development and app creator'
+        />
+        <meta property='og:image' content='/me.jpg' />
+        <meta property='og:url' content='https://claudiamarie.me/' />
+        <meta property='og:type' content='website' />
         <link
           href='https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&display=swap'
           rel='stylesheet'

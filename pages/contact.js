@@ -43,8 +43,24 @@ export default function ContactPage() {
       <Head>
         <title>claudiamarie.me contact page</title>
         <meta
-          name='react portfolio contact page for claudia marie developer california'
-          content='web development, programming, next.js, react, gatsby'
+          name='description'
+          content='JavaScript web development and app creator contact'
+        />
+        <meta
+          name='keyword'
+          content='portfolio, javascript, developer, claudiamarie'
+        />
+        <meta
+          content='width=device-width, initial-scale=1, 
+      shrink-to-fit=no'
+        />
+        <meta
+          property='og:title'
+          content='Contact claudiamarie | Front End Web Developer'
+        />
+        <meta
+          property='og:description'
+          content='Contact a JavaScript development and app creator'
         />
         <link
           href='https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&display=swap'
@@ -65,7 +81,7 @@ export default function ContactPage() {
             <input type='hidden' name='redirect' className='redirect' />
             <div className='mb-10'>
               <Fade duration={2000}>
-                <p className='alpha font-medium text-base mb-5 w-9/12'>
+                <p className='alpha font-medium text-base mb-5 w-11/12'>
                   I&apos;m always interested in exploring new projects and
                   ideas. Send me a message and I&apos;ll get back to you
                   shortly.
@@ -97,6 +113,7 @@ export default function ContactPage() {
                   </svg>
                 </span>
                 <input
+                  id='name'
                   type='text'
                   name='name'
                   {...register("name", {
@@ -132,6 +149,8 @@ export default function ContactPage() {
                 </span>
                 <input
                   type='email'
+                  id='email'
+                  name='email'
                   {...register("email", {
                     required: "required",
                     pattern: {
@@ -139,7 +158,6 @@ export default function ContactPage() {
                       message: "You must enter a valid email",
                     },
                   })}
-                  name='email'
                   className='flex-1 block w-full sm:text-md rounded-none border border-mushroom bg-transparent border-b-2 border-t-0 border-r-0 border-l-0 alpha'
                 />
               </div>
@@ -177,7 +195,7 @@ export default function ContactPage() {
             <div>
               <button
                 type='submit'
-                className='flex justify-center font-medium shadow-md rounded-none p-2 w-3/12 focus:outline-none focus:ring-2 focus:ring-offset-2 border border-gray-900  bg-gray-800 text-mushroom hover:bg-gray-900 mx-auto'
+                className='flex justify-center font-medium shadow-md rounded-none p-2 w-2/5 focus:outline-none focus:ring-2 focus:ring-offset-2 border border-gray-900  bg-gray-800 text-mushroom hover:bg-gray-900 mx-auto'
               >
                 {" "}
                 Send&nbsp;
